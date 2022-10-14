@@ -1,0 +1,51 @@
+@use "../1-base/base-mixin" as bm;
+@use "layout-mixins" as lm;
+
+.header {
+  margin-bottom: 70px;
+
+  .header-nav {
+    h1 {
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+      font-weight: 700;
+    }
+
+    &-container {
+      @include lm.center-content;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 45px;
+
+      &-list {
+        @include lm.flex-menu;
+
+        &-itens {
+          @include lm.flex-menu;
+
+          @include bm.tablet {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &-list-expanded {
+      @include lm.flex-menu;
+      @include lm.menu-animation;
+      padding: 0 20px;
+      flex-direction: column;
+      gap: 10px;
+
+      li {
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+
+        @include bm.tablet {
+          width: 100%;
+          margin-inline: auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,265 @@
+.header {
+  margin-bottom: 70px;
+}
+.header .header-nav h1 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+.header .header-nav-container {
+  max-width: 1850px;
+  padding: 0 20px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 45px;
+}
+.header .header-nav-container-list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.header .header-nav-container-list-itens {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+@media (max-width: 800px) {
+  .header .header-nav-container-list-itens {
+    display: none;
+  }
+}
+.header .header-nav-list-expanded {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  position: static;
+  width: 100%;
+  margin-top: 30px;
+  height: 0;
+  transition: 0.4s;
+  visibility: hidden;
+  overflow-y: hidden;
+  padding: 0 20px;
+  flex-direction: column;
+  gap: 10px;
+}
+.header .header-nav-list-expanded.ativo {
+  height: 35vh;
+  visibility: visible;
+}
+.header .header-nav-list-expanded li {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 800px) {
+  .header .header-nav-list-expanded li {
+    width: 100%;
+    margin-inline: auto;
+  }
+}
+
+.main {
+  max-width: 1850px;
+  padding: 0 20px;
+  margin-inline: auto;
+  max-width: 1900px;
+  display: flex;
+  gap: 50px;
+}
+.main-picture {
+  overflow: hidden;
+  position: relative;
+}
+.main-picture img {
+  transition: ease 0.7s;
+  transform: scale(1);
+}
+.main-picture img:hover {
+  transform: scale(1.15);
+}
+@media (max-width: 800px) {
+  .main-picture {
+    margin-bottom: 50px;
+  }
+}
+.main-picture-cover {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 800px) {
+  .main {
+    display: block;
+  }
+}
+.main-text {
+  align-self: center;
+  padding-right: 120px;
+}
+@media (max-width: 1700px) {
+  .main-text {
+    padding-right: 60px;
+  }
+}
+.main-text h2 {
+  font-size: 3.7rem;
+  font-weight: 400;
+  line-height: 3.7rem;
+  color: #C4E5F6;
+  max-width: 20ch;
+  margin-bottom: 32px;
+}
+@media (max-width: 800px) {
+  .main-text h2 {
+    max-width: 100%;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+}
+.main-text p {
+  line-height: 1.5rem;
+  max-width: 45ch;
+  margin-bottom: 32px;
+}
+@media (max-width: 800px) {
+  .main-text p {
+    max-width: 100%;
+  }
+}
+.main-text a {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+.main-text a::before {
+  top: 15px;
+}
+
+.links {
+  color: #CECECE;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.links::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #CECECE;
+  transition: 0.3s;
+}
+.links:hover::after {
+  width: 0;
+}
+.links::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+  transition: 0.3s;
+  z-index: -1;
+}
+.links:hover::before {
+  transform: scale(30);
+  background: #DC3545;
+}
+.links-expanded {
+  display: block;
+  width: 100%;
+  margin-inline: auto;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 15px 10px;
+}
+.links-expanded::before {
+  top: 25px;
+}
+.links-expanded::after {
+  content: none;
+}
+
+.btn-menu {
+  width: 64px;
+  height: 64px;
+  display: block;
+  background: none;
+  cursor: pointer;
+  border: none;
+  background: #C4E5F6;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.btn-menu:hover {
+  background: #98d2ef;
+}
+.btn-menu-container {
+  max-width: max-content;
+  margin: 0 auto;
+}
+.btn-menu-big-line {
+  width: 30px;
+  height: 3px;
+  margin-left: auto;
+  background: #000000;
+  transition: 0.3s;
+}
+.btn-menu-big-line.ativo {
+  width: 20px;
+}
+.btn-menu-small-line {
+  width: 25px;
+  height: 3px;
+  background: #000000;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+.btn-menu-small-line.ativo {
+  width: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #D1D1D1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  max-width: max-content;
+  color: currentColor;
+}
+
+/*# sourceMappingURL=app.css.map */

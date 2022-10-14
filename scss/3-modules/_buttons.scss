@@ -1,0 +1,49 @@
+@use "sass:color";
+@use "../1-base/variables" as v;
+
+.btn-menu {
+  width: 64px;
+  height: 64px;
+  display: block;
+  background: none;
+  cursor: pointer;
+  border: none;
+  background: v.$title-color;
+  border-radius: 50%;
+  transition: 0.3s;
+
+  &:hover {
+    background: darken(#c4e5f6, 10%);
+  }
+
+  &-container {
+    max-width: max-content;
+    margin: 0 auto;
+  }
+
+  &-big-line {
+    width: 30px;
+    height: 3px;
+    margin-left: auto;
+    background: v.$dark-color;
+    transition: 0.3s;
+
+    &.ativo {
+      width: 20px;
+    }
+  }
+
+  &-small-line {
+    width: 25px;
+    height: 3px;
+    background: v.$dark-color;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+
+    &.ativo {
+      width: 20px;
+    }
+  }
+}

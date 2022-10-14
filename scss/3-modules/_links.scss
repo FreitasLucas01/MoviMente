@@ -1,0 +1,64 @@
+@use "../1-base/variables" as v;
+
+.links {
+  color: v.$links-color;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: v.$links-color;
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    width: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10px;
+    left: 0;
+    right: 0;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+    transition: 0.3s;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    transform: scale(30);
+    background: v.$circle-red-color;
+  }
+
+  &-expanded {
+    display: block;
+    width: 100%;
+    margin-inline: auto;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 15px 10px;
+
+    &::before {
+      top: 25px;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+}
