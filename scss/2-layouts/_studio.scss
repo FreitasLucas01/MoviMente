@@ -1,0 +1,23 @@
+@use "layout-mixins" as lm;
+@use "../1-base/base-mixin" as bm;
+@use "../1-base/variables" as bv;
+@use "../3-modules/title-font" as mtf;
+@use "../3-modules/keyframes-mixins" as mk;
+@use "../3-modules/img-animation" as mia;
+
+.studio {
+  @include lm.center-content-menu;
+  @include lm.center-content-sections;
+  font-size: 2.5rem;
+  line-height: 3rem;
+
+  &-text {
+    h2 {
+      @include mtf.title-font;
+    }
+
+    p {
+      max-width: 30ch;
+    }
+  }
+}

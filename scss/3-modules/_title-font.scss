@@ -1,0 +1,13 @@
+@use "../1-base/base-mixin" as bm;
+@use "../1-base/variables" as bv;
+@use "../2-layouts/layout-mixins" as lm;
+@use "../3-modules/keyframes-mixins" as mk;
+@use "../3-modules/img-animation" as mia;
+
+@mixin title-font {
+    font-size: 3.7rem;
+    font-weight: 400;
+    line-height: 3.7rem;
+    color: bv.$title-color;
+    margin-bottom: 32px;
+}

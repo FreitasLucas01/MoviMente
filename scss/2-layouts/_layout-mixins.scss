@@ -1,4 +1,10 @@
-@mixin center-content{
+@mixin center-content-sections{
+  max-width: 1900px;
+  display: flex;
+  gap: 50px;
+}
+
+@mixin center-content-menu{
     max-width: 1850px;
     padding: 0 20px;
     margin-inline: auto;

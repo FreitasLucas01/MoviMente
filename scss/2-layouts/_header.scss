@@ -12,7 +12,7 @@
     }
 
     &-container {
-      @include lm.center-content;
+      @include lm.center-content-menu;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -24,7 +24,7 @@
         &-itens {
           @include lm.flex-menu;
 
-          @include bm.tablet {
+          @include bm.responsivet {
             display: none;
           }
         }
@@ -41,7 +41,7 @@
       li {
         border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
 
-        @include bm.tablet {
+        @include bm.responsivet {
           width: 100%;
           margin-inline: auto;
         }
