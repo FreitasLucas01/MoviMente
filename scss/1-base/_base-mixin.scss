@@ -1,4 +1,4 @@
-@mixin responsivet($width: 800px) {
+@mixin responsive($width: 800px) {
     @media (max-width: $width){
         @content;
     }

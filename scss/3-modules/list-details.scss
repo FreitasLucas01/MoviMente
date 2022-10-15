@@ -1,0 +1,14 @@
+@use "../1-base/variables" as bv;
+
+@mixin list-details {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: bv.$body-bg-color;
+    border: 3px solid bv.$text-color;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+}

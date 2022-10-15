@@ -4,20 +4,62 @@
 @use "../3-modules/title-font" as mtf;
 @use "../3-modules/keyframes-mixins" as mk;
 @use "../3-modules/img-animation" as mia;
+@use "../3-modules/list-details.scss" as mld;
 
 .studio {
   @include lm.center-content-menu;
   @include lm.center-content-sections;
+  gap: 100px;
   font-size: 2.5rem;
   line-height: 3rem;
+
+  @include bm.responsive {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  &-picture {
+    width: 40.6%;
+
+    @include bm.responsive(1200px) {
+      width: 100%;
+    }
+
+    @include bm.responsive {
+      margin-bottom: 50px;
+    }
+  }
 
   &-text {
     h2 {
       @include mtf.title-font;
+
+      @include bm.responsive {
+        display: block;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+      }
     }
 
     p {
-      max-width: 30ch;
+      max-width: 33ch;
+      margin-bottom: 32px;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    &-list {
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        @include mld.list-details;
+      }
     }
   }
 }
