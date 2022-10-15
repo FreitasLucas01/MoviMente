@@ -45,6 +45,10 @@
     p {
       max-width: 33ch;
       margin-bottom: 32px;
+
+      @include bm.responsive {
+        max-width: 100%;
+      }
     }
 
     span {

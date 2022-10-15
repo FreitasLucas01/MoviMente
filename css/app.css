@@ -193,6 +193,11 @@
   max-width: 33ch;
   margin-bottom: 32px;
 }
+@media (max-width: 800px) {
+  .studio-text p {
+    max-width: 100%;
+  }
+}
 .studio-text span {
   display: block;
   margin-bottom: 20px;
