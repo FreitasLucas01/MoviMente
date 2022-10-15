@@ -1,9 +1,6 @@
 @use "layout-mixins" as lm;
 @use "../1-base/base-mixin" as bm;
-@use "../1-base/variables" as bv;
 @use "../3-modules/title-font" as mtf;
-@use "../3-modules/keyframes-mixins" as mk;
-@use "../3-modules/img-animation" as mia;
 @use "../3-modules/list-details.scss" as mld;
 
 .studio {
@@ -12,11 +9,14 @@
   gap: 100px;
   font-size: 2.5rem;
   line-height: 3rem;
-
+  
+  @include bm.responsive(1200px) {
+    gap: 50px;
+}
   @include bm.responsive {
     display: block;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   &-picture {
@@ -24,7 +24,7 @@
 
     @include bm.responsive(1200px) {
       width: 100%;
-    }
+  }
 
     @include bm.responsive {
       margin-bottom: 50px;

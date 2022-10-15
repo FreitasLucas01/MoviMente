@@ -4,6 +4,7 @@
   &::before {
     content: "";
     display: inline-block;
+    flex: 0 0 auto;
     width: 10px;
     height: 10px;
     background: bv.$body-bg-color;
