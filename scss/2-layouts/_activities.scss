@@ -53,9 +53,15 @@
     h3 {
       @include mtf.title-font-4;
       margin-bottom: 23px;
+
+      @include bm.responsive {
+        @include mtf.title-font-5;
+      }
     }
 
     p {
+      font-size: 1rem;
+      line-height: 1.5rem;
       max-width: 47.6ch;
 
       @include bm.responsive {

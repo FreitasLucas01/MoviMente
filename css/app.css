@@ -309,7 +309,17 @@
   color: #C4E5F6;
   margin-bottom: 23px;
 }
+@media (max-width: 800px) {
+  .activities-info h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #C4E5F6;
+  }
+}
 .activities-info p {
+  font-size: 1rem;
+  line-height: 1.5rem;
   max-width: 47.6ch;
 }
 @media (max-width: 800px) {
@@ -382,7 +392,7 @@
   width: 78px;
   height: 78px;
   background: #1C427E;
-  margin-bottom: 45px;
+  margin-bottom: 60px;
   transition: 0.3s;
 }
 @media (max-width: 800px) {
@@ -410,7 +420,7 @@
   height: 70px;
   background: #DF3B96;
   margin-left: 4.7px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   transition: 0.3s;
 }
 @media (max-width: 800px) {
@@ -463,9 +473,9 @@
     border-left: none;
     border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
   }
-}
-.activities-info-orange:hover .activities-info-orange-square {
-  transform: rotate(-45deg) translate(0.8rem, -0.5rem) scale(0.75);
+  .activities-info-orange:hover .activities-info-orange-square {
+    transform: rotate(-45deg) translate(0.8rem, -0.5rem) scale(0.75);
+  }
 }
 .activities-info-pink {
   position: relative;
