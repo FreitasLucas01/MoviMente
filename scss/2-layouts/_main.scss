@@ -1,7 +1,6 @@
 @use "layout-mixins" as lm;
 @use "../1-base/base-mixin" as bm;
-@use "../1-base/variables" as bv;
-@use "../3-modules/title-font" as mtf;
+@use "../3-modules/titles-font" as mtf;
 @use "../3-modules/keyframes-mixins" as mk;
 @use "../3-modules/img-animation" as mia;
 
@@ -12,7 +11,6 @@
 
   &-picture {
     overflow: hidden;
-    position: relative;
 
     img {
       @include mia.opacity-animation;
@@ -48,7 +46,7 @@
     }
 
     h2 {
-      @include mtf.title-font;
+      @include mtf.title-font-2;
       max-width: 20ch;
       margin-bottom: 32px;
 
@@ -70,8 +68,7 @@
     }
 
     a {
-      font-size: 1.25rem;
-      line-height: 1.875rem;
+      @include mtf.title-font-1;
 
       &::before {
         top: 15px;

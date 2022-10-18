@@ -1,5 +1,5 @@
 @use "sass:color";
-@use "../1-base/variables" as v;
+@use "../1-base/variables" as bv;
 
 .btn-menu {
   width: 64px;
@@ -8,7 +8,7 @@
   background: none;
   cursor: pointer;
   border: none;
-  background: v.$title-color;
+  background: bv.$title-color;
   border-radius: 50%;
   transition: 0.3s;
 
@@ -25,7 +25,7 @@
     width: 30px;
     height: 3px;
     margin-left: auto;
-    background: v.$dark-color;
+    background: bv.$dark-color;
     transition: 0.3s;
 
     &.ativo {
@@ -36,7 +36,7 @@
   &-small-line {
     width: 25px;
     height: 3px;
-    background: v.$dark-color;
+    background: bv.$dark-color;
     margin-left: auto;
     margin-top: 5px;
     margin-bottom: 5px;

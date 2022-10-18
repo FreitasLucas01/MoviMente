@@ -2,6 +2,7 @@
 @use "layout-mixins" as lm;
 
 .header {
+  margin-top: 45px;
   margin-bottom: 70px;
 
   .header-nav {
@@ -9,6 +10,7 @@
       font-size: 1.25rem;
       line-height: 1.25rem;
       font-weight: 700;
+      max-height: max-content;
     }
 
     &-container {
@@ -16,7 +18,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 45px;
 
       &-list {
         @include lm.flex-menu;

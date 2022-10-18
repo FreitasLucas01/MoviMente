@@ -1,0 +1,29 @@
+@use "../1-base/variables" as bv;
+
+@mixin title-font-1{
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: 400;
+}
+
+@mixin title-font-2 {
+    font-size: 3.7rem;
+    font-weight: 400;
+    line-height: 3.7rem;
+    color: bv.$title-color;
+    margin-bottom: 32px;
+}
+
+@mixin title-font-3 {
+    font-size: 5.25rem;
+    font-weight: 400;
+    line-height: 5.25rem;
+    color: bv.$title-color;
+}
+
+@mixin title-font-4 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: bv.$title-color;
+}

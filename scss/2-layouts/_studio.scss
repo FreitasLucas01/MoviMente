@@ -1,7 +1,8 @@
 @use "layout-mixins" as lm;
 @use "../1-base/base-mixin" as bm;
-@use "../3-modules/title-font" as mtf;
+@use "../3-modules/titles-font" as mtf;
 @use "../3-modules/list-details.scss" as mld;
+@use "../3-modules/img-animation" as mia;
 
 .studio {
   @include lm.center-content-menu;
@@ -9,10 +10,12 @@
   gap: 100px;
   font-size: 2.5rem;
   line-height: 3rem;
-  
+  margin-bottom: 160px;
+
   @include bm.responsive(1200px) {
     gap: 50px;
-}
+  }
+
   @include bm.responsive {
     display: block;
     font-size: 1.5rem;
@@ -21,19 +24,24 @@
 
   &-picture {
     width: 40.6%;
+    overflow: hidden;
 
     @include bm.responsive(1200px) {
       width: 100%;
-  }
+    }
 
     @include bm.responsive {
       margin-bottom: 50px;
+    }
+
+    img {
+      @include mia.opacity-animation;
     }
   }
 
   &-text {
     h2 {
-      @include mtf.title-font;
+      @include mtf.title-font-2;
 
       @include bm.responsive {
         display: block;

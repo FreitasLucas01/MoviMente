@@ -1,0 +1,115 @@
+@use "layout-mixins" as lm;
+@use "../1-base/variables" as bv;
+@use "../1-base/base-mixin" as bm;
+@use "../3-modules/titles-font" as mtf;
+@use "../3-modules/keyframes-mixins" as mk;
+@use "../3-modules/img-animation" as mia;
+@use "../3-modules/square-animations" as msa;
+@use "../3-modules/square-creations" as msc;
+
+.activities {
+  max-width: 1900px;
+  padding: 0 32px;
+  text-align: center;
+
+  &-title {
+    margin-bottom: 140px;
+
+    @include bm.responsive {
+      margin-bottom: 30px;
+    }
+
+    span {
+      display: block;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+
+      @include mtf.title-font-1;
+      line-height: 1.25rem;
+    }
+
+    h2 {
+      @include mtf.title-font-3;
+
+      @include bm.responsive {
+        @include mtf.title-font-2;
+      }
+    }
+  }
+
+  &-info {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+
+    @include bm.responsive {
+      display: block;
+    }
+
+    h3 {
+      @include mtf.title-font-4;
+      margin-bottom: 23px;
+    }
+
+    p {
+      max-width: 47.6ch;
+
+      @include bm.responsive {
+        max-width: 100%;
+      }
+    }
+
+    &-empty-square-first {
+      @include msc.empty-square;
+      top: 40px;
+      left: 60px;
+
+      @include bm.responsive {
+        top: 65px;
+        left: 15px;
+      }
+    }
+
+    &-empty-square-second {
+      @include msc.empty-square;
+      transform: rotate(45deg);
+      top: 165px;
+      left: 50px;
+
+      @include bm.responsive {
+        top: 35px;
+        left: 25px;
+      }
+    }
+
+    &-empty-square-third {
+      @include msc.empty-square;
+      top: 96px;
+      left: 30px;
+    }
+
+    &-blue-square {
+      @include msc.blue-square;
+    }
+
+    &-orange-square {
+      @include msc.orange-square;
+    }
+
+    &-pink-square {
+      @include msc.pink-square;
+    }
+
+    &-blue {
+      @include msa.blue-animation;
+    }
+
+    &-orange {
+      @include msa.orange-animation;
+    }
+
+    &-pink {
+      @include msa.pink-animation;
+    }
+  }
+}

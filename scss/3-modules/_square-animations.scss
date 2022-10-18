@@ -1,0 +1,73 @@
+@use "../1-base/base-mixin" as bm;
+
+@mixin blue-animation {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 30px 40px 30px;
+  border: 1px dotted rgba(255, 255, 255, 0.5);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+
+  &:hover .activities-info-blue-square {
+    transform: rotate(45deg) translate(2.6rem, 0rem);
+  }
+
+  @include bm.responsive {
+    width: 100%;
+    padding: 50px 0;
+    border-left: none;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+
+    &:hover .activities-info-blue-square {
+      transform: rotate(45deg) translate(1.2rem, 0rem);
+    }
+  }
+}
+
+@mixin orange-animation {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  padding: 192px 30px 100px 30px;
+  border: 1px dotted rgba(255, 255, 255, 0.5);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+
+  &:hover .activities-info-orange-square {
+    transform: rotate(-45deg) translate(1.875rem, -0.5rem) scale(0.75);
+  }
+
+  @include bm.responsive {
+    width: 100%;
+    padding: 50px 0;
+    border-left: none;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+  }
+
+  &:hover .activities-info-orange-square {
+    transform: rotate(-45deg) translate(.8rem, -.5rem) scale(0.75);
+  }
+}
+
+@mixin pink-animation {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  padding: 100px 30px 100px 30px;
+  border: 1px dotted rgba(255, 255, 255, 0.5);
+  border-top: none;
+  border-bottom: none;
+
+  &:hover .activities-info-pink-square {
+    transform: scale(1.1) rotate(45deg);
+  }
+
+  @include bm.responsive {
+    width: 100%;
+    padding: 50px 0;
+    border: none;
+  }
+}
