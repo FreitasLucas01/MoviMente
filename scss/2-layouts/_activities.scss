@@ -1,9 +1,5 @@
-@use "layout-mixins" as lm;
-@use "../1-base/variables" as bv;
 @use "../1-base/base-mixin" as bm;
 @use "../3-modules/titles-font" as mtf;
-@use "../3-modules/keyframes-mixins" as mk;
-@use "../3-modules/img-animation" as mia;
 @use "../3-modules/square-animations" as msa;
 @use "../3-modules/square-creations" as msc;
 
