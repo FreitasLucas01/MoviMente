@@ -12,6 +12,10 @@
   padding: 0 32px;
   text-align: center;
 
+  @include bm.responsive {
+    padding: 0 20px;
+  }
+
   &-title {
     margin-bottom: 140px;
 
@@ -86,6 +90,11 @@
       @include msc.empty-square;
       top: 96px;
       left: 30px;
+
+      @include bm.responsive {
+        top: 50px;
+        left: 5px;
+      }
     }
 
     &-blue-square {
