@@ -2,6 +2,7 @@
 @use "../1-base/base-mixin" as bm;
 @use "../3-modules/text-font" as mtf;
 @use "../3-modules/list-details.scss" as mld;
+@use "../3-modules/keyframes-mixins" as mk;
 @use "../3-modules/img-animation" as mia;
 
 .studio {

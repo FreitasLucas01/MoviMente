@@ -1,0 +1,52 @@
+@use "layout-mixins" as lm;
+@use "../1-base/variables" as bv;
+@use "../1-base/base-mixin" as bm;
+@use "../3-modules/text-font" as mtf;
+@use "../3-modules/list-details.scss" as mld;
+@use "../3-modules/img-animation" as mia;
+@use "../3-modules/text-img-animation" as mtia;
+
+.video {
+  position: relative;
+  max-width: 1900px;
+  padding: 0 32px;
+  margin: 0 auto;
+  text-align: center;
+
+  &-img-container {
+    position: relative;
+    max-width: 1217px;
+    max-height: 811px;
+    margin-inline: auto;
+    cursor: pointer;
+
+    &::before{
+        content: "MOVIMENTE GRAPHICS STUDIO SHOW";
+        position: absolute;
+        transform: rotate(90deg);
+        left: -160px;
+        top: 132px;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 256px;
+        height: 256px;
+        background: bv.$square-blue-color;
+        right: -20px;
+        bottom: -20px;
+        z-index: -1;
+      }
+
+    h3 {
+      @include mtf.text-font-2;
+      @include mtia.text-img-animation;
+    }
+
+    &:hover ::before {
+      transform: scale(1.1);
+    }
+  }
+}
