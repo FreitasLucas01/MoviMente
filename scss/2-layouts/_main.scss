@@ -1,6 +1,6 @@
 @use "layout-mixins" as lm;
 @use "../1-base/base-mixin" as bm;
-@use "../3-modules/titles-font" as mtf;
+@use "../3-modules/text-font" as mtf;
 @use "../3-modules/keyframes-mixins" as mk;
 @use "../3-modules/img-animation" as mia;
 
@@ -58,7 +58,7 @@
     }
 
     p {
-      line-height: 1.5rem;
+      @include mtf.text-font-1;
       max-width: 45ch;
       margin-bottom: 32px;
 

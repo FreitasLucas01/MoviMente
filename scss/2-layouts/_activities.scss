@@ -1,5 +1,5 @@
 @use "../1-base/base-mixin" as bm;
-@use "../3-modules/titles-font" as mtf;
+@use "../3-modules/text-font" as mtf;
 @use "../3-modules/square-animations" as msa;
 @use "../3-modules/square-creations" as msc;
 
@@ -7,6 +7,7 @@
   max-width: 1900px;
   padding: 0 32px;
   text-align: center;
+  margin-bottom: 160px;
 
   @include bm.responsive {
     padding: 0 20px;
@@ -56,8 +57,7 @@
     }
 
     p {
-      font-size: 1rem;
-      line-height: 1.5rem;
+      @include mtf.text-font-1;
       max-width: 47.6ch;
 
       @include bm.responsive {
