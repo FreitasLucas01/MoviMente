@@ -7,11 +7,11 @@
 @use "../3-modules/text-img-animation" as mtia;
 
 .video {
-  position: relative;
   max-width: 1900px;
   padding: 0 32px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 
   &-img-container {
     position: relative;
@@ -20,25 +20,25 @@
     margin-inline: auto;
     cursor: pointer;
 
-    &::before{
-        content: "MOVIMENTE GRAPHICS STUDIO SHOW";
-        position: absolute;
-        transform: rotate(90deg);
-        left: -160px;
-        top: 132px;
+    &::before {
+      content: "MOVIMENTE GRAPHICS STUDIO SHOW";
+      position: absolute;
+      transform: rotate(90deg);
+      left: -160px;
+      top: 132px;
     }
 
     &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 256px;
-        height: 256px;
-        background: bv.$square-blue-color;
-        right: -20px;
-        bottom: -20px;
-        z-index: -1;
-      }
+      content: "";
+      display: block;
+      position: absolute;
+      width: 256px;
+      height: 256px;
+      background: bv.$square-blue-color;
+      right: -20px;
+      bottom: -20px;
+      z-index: -1;
+    }
 
     h3 {
       @include mtf.text-font-2;
@@ -47,6 +47,74 @@
 
     &:hover ::before {
       transform: scale(1.1);
+    }
+  }
+
+  &-modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999999;
+    display: none;
+
+    &.ativo {
+      display: flex;
+    }
+
+    iframe {
+      width: 70vw;
+      height: 90vh;
+    }
+
+    .btn-close {
+      position: absolute;
+      top: 50px;
+      right: 100px;
+      width: 60px;
+      height: 60px;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.5);
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        border-color: bv.$light-color;
+      }
+
+      &:hover .btn-close-line-1 {
+        background: bv.$light-color;
+      }
+
+      &:hover .btn-close-line-2 {
+        background: bv.$light-color;
+      }
+
+      &-line-1 {
+        margin-inline: auto;
+        margin-bottom: 6px;
+        width: 30px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.5);
+        transform: rotate(-45deg) translate(-3px, 3px);
+        transition: 0.2s;
+      }
+
+      &-line-2 {
+        margin-inline: auto;
+        width: 30px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.5);
+        transform: rotate(45deg) translate(-3px, -3px);
+        transition: 0.2s;
+      }
     }
   }
 }
