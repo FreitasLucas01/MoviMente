@@ -15,10 +15,15 @@
 
   &-img-container {
     position: relative;
-    max-width: 1217px;
-    max-height: 811px;
+    width: 63.4vw;
+    height:42.2vw;
     margin-inline: auto;
     cursor: pointer;
+
+    @include bm.responsive {
+      width: 100%;
+      height: 100%;
+    }
 
     &::before {
       content: "MOVIMENTE GRAPHICS STUDIO SHOW";
@@ -66,7 +71,7 @@
     &.ativo {
       display: flex;
     }
-    
+
     .btn-close {
       position: fixed;
       top: 40px;
