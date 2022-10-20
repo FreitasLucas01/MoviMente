@@ -2,6 +2,17 @@
 
 @mixin center-content-sections{
   max-width: 1900px;
+  padding: 0 32px;
+  margin-inline: auto;
+  text-align: center;
+
+  @include bm.responsive {
+    padding: 0 20px;
+  }
+}
+
+@mixin flex-content-sections{
+  max-width: 1900px;
   display: flex;
   gap: 50px;
 }

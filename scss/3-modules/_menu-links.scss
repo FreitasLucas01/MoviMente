@@ -1,7 +1,7 @@
-@use "../1-base/variables" as v;
+@use "../1-base/variables" as bv;
 
 .links {
-  color: v.$links-color;
+  color: bv.$links-color;
   font-size: 1.25rem;
   line-height: 1.875rem;
   position: relative;
@@ -16,7 +16,7 @@
     bottom: 3px;
     width: 100%;
     height: 1px;
-    background: v.$links-color;
+    background: bv.$links-color;
     transition: 0.3s;
   }
 
@@ -44,7 +44,7 @@
 
   &:hover::before {
     transform: scale(30);
-    background: v.$circle-red-color;
+    background: bv.$circle-red-color;
   }
 
   &-expanded {

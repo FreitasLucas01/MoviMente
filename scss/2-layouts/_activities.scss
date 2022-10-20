@@ -1,17 +1,12 @@
+@use "layout-mixins" as lm;
 @use "../1-base/base-mixin" as bm;
-@use "../3-modules/text-font" as mtf;
+@use "../1-base/text-font" as btf;
 @use "../3-modules/square-animations" as msa;
 @use "../3-modules/square-creations" as msc;
 
 .activities {
-  max-width: 1900px;
-  padding: 0 32px;
-  text-align: center;
+  @include lm.center-content-sections;
   margin-bottom: 160px;
-
-  @include bm.responsive {
-    padding: 0 20px;
-  }
 
   &-title {
     margin-bottom: 140px;
@@ -25,15 +20,15 @@
       text-transform: uppercase;
       margin-bottom: 15px;
 
-      @include mtf.title-font-1;
+      @include btf.title-font-1;
       line-height: 1.25rem;
     }
 
     h2 {
-      @include mtf.title-font-3;
+      @include btf.title-font-3;
 
       @include bm.responsive {
-        @include mtf.title-font-2;
+        @include btf.title-font-2;
       }
     }
   }
@@ -48,16 +43,16 @@
     }
 
     h3 {
-      @include mtf.title-font-4;
+      @include btf.title-font-4;
       margin-bottom: 23px;
 
       @include bm.responsive {
-        @include mtf.title-font-5;
+        @include btf.title-font-5;
       }
     }
 
     p {
-      @include mtf.text-font-1;
+      @include btf.text-font-1;
       max-width: 47.6ch;
 
       @include bm.responsive {

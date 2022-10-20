@@ -255,6 +255,7 @@
 .activities {
   max-width: 1900px;
   padding: 0 32px;
+  margin-inline: auto;
   text-align: center;
   margin-bottom: 160px;
 }
@@ -436,7 +437,7 @@
 .activities-info-blue {
   position: relative;
   width: 50%;
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 10px 30px 40px 30px;
   border: 1px dotted rgba(255, 255, 255, 0.5);
   border-top: none;
@@ -460,7 +461,7 @@
 .activities-info-orange {
   position: relative;
   width: 50%;
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 192px 30px 100px 30px;
   border: 1px dotted rgba(255, 255, 255, 0.5);
   border-top: none;
@@ -484,7 +485,7 @@
 .activities-info-pink {
   position: relative;
   width: 50%;
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 100px 30px;
   border: 1px dotted rgba(255, 255, 255, 0.5);
   border-top: none;
@@ -504,7 +505,7 @@
 .video {
   max-width: 1900px;
   padding: 0 32px;
-  margin: 0 auto;
+  margin-inline: auto;
   text-align: center;
   position: relative;
 }
@@ -737,7 +738,7 @@
 }
 .btn-menu-container {
   max-width: max-content;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 .btn-menu-big-line {
   width: 30px;

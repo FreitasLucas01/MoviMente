@@ -3,7 +3,7 @@
 @mixin blue-animation {
   position: relative;
   width: 50%;
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 10px 30px 40px 30px;
   border: 1px dotted rgba(255, 255, 255, 0.5);
   border-top: none;
@@ -29,7 +29,7 @@
 @mixin orange-animation {
   position: relative;
   width: 50%;
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 192px 30px 100px 30px;
   border: 1px dotted rgba(255, 255, 255, 0.5);
   border-top: none;
@@ -55,7 +55,7 @@
 @mixin pink-animation {
   position: relative;
   width: 50%;
-  margin: 0 auto;
+  margin-inline: auto;
   padding: 100px 30px;
   border: 1px dotted rgba(255, 255, 255, 0.5);
   border-top: none;

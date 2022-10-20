@@ -1,21 +1,16 @@
 @use "layout-mixins" as lm;
 @use "../1-base/variables" as bv;
 @use "../1-base/base-mixin" as bm;
-@use "../3-modules/text-font" as mtf;
-@use "../3-modules/list-details.scss" as mld;
+@use "../3-modules/modal" as mm;
+@use "../3-modules/modal-btn" as mmb;
+@use "../1-base/text-font" as btf;
 @use "../3-modules/img-animation" as mia;
+@use "../3-modules/list-details.scss" as mld;
 @use "../3-modules/text-img-animation" as mtia;
 
 .video {
-  max-width: 1900px;
-  padding: 0 32px;
-  margin: 0 auto;
-  text-align: center;
+  @include lm.center-content-sections;
   position: relative;
-
-  @include bm.responsive {
-    padding: 0 20px;
-  }
 
   &-img-container {
     position: relative;
@@ -59,12 +54,12 @@
 
     h3 {
       margin-inline: auto;
-      @include mtf.text-font-2;
+      @include btf.text-font-2;
       @include mtia.text-img-animation;
 
       @include bm.responsive() {
         max-width: 5ch;
-        @include mtf.text-font-1;
+        @include btf.text-font-1;
       }
     }
 
@@ -74,65 +69,10 @@
   }
 
   &-modal-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 9999999;
-    display: none;
-
-    &.ativo {
-      display: flex;
-    }
+    @include mm.modal;
 
     .btn-close {
-      position: fixed;
-      top: 40px;
-      right: 40px;
-      width: 60px;
-      height: 60px;
-      background: transparent;
-      color: rgba(255, 255, 255, 0.5);
-      border: 2px solid rgba(255, 255, 255, 0.5);
-      border-radius: 50%;
-      cursor: pointer;
-      transition: 0.2s;
-
-      &:hover {
-        border-color: bv.$light-color;
-      }
-
-      &:hover .btn-close-line-1 {
-        background: bv.$light-color;
-      }
-
-      &:hover .btn-close-line-2 {
-        background: bv.$light-color;
-      }
-
-      &-line-1 {
-        margin-inline: auto;
-        margin-bottom: 6px;
-        width: 30px;
-        height: 2px;
-        background: rgba(255, 255, 255, 0.5);
-        transform: rotate(-45deg) translate(-3px, 3px);
-        transition: 0.2s;
-      }
-
-      &-line-2 {
-        margin-inline: auto;
-        width: 30px;
-        height: 2px;
-        background: rgba(255, 255, 255, 0.5);
-        transform: rotate(45deg) translate(-3px, -3px);
-        transition: 0.2s;
-      }
+      @include mmb.modal-btn;
     }
 
     &-iframe {
