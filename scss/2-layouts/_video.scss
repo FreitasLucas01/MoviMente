@@ -58,18 +58,18 @@
     }
 
     h3 {
+      margin-inline: auto;
       @include mtf.text-font-2;
       @include mtia.text-img-animation;
 
       @include bm.responsive() {
+        max-width: 5ch;
         @include mtf.text-font-1;
-        word-break: break-word;
-        word-wrap: break-word;
       }
     }
 
     &:hover ::before {
-      transform: scale(1.1);
+      transform: translate(-50%, -50%) scale(1.1);
     }
   }
 
@@ -137,7 +137,7 @@
 
     &-iframe {
       width: 80vw;
-      height: calc(45vw);
+      height: 45vw;
       margin-inline: auto;
     }
 
