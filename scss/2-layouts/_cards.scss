@@ -1,4 +1,5 @@
 @use "layout-mixins" as lm;
+@use "../1-base/variables" as bv;
 @use "../1-base/base-mixin" as bm;
 @use "../1-base/text-font" as btf;
 @use "../3-modules/square-animations" as msa;
@@ -9,15 +10,59 @@
   padding: 0 32px;
   display: flex;
   justify-content: center;
-  gap: 50px;
 
-  img[src$="jpeg"] {
-    width: 20vw;
-    height: 30vw;
-    transform: skewY(2deg);
-  }
+//   @include bm.responsive(1050px) {
+//     flex-wrap: wrap;
+//   }
 
-  p{
-    max-width: 35ch;
+  &-box {
+    width: 100%;
+    border-left: 1px dotted bv.$modal-btn-color;
+    padding: 0 35px 80px 35px;
+
+    &.neon {
+      border-right: 1px dotted bv.$modal-btn-color;
+    }
+
+    .cards-box-moon,
+    .cards-box-mask,
+    .cards-box-sparkle,
+    .cards-box-neon {
+      transition: 0.5s;
+    }
+    &:hover .cards-box-moon {
+      transform: translateY(-3rem);
+    }
+    &:hover .cards-box-mask {
+      transform: translateY(-3rem);
+    }
+    &:hover .cards-box-sparkle {
+      transform: translateY(-3rem);
+    }
+    &:hover .cards-box-neon {
+      transform: translateY(-3rem);
+    }
+
+    img[src$="jpeg"] {
+      width: 100%;
+      height: 75%;
+      transform: skewY(2deg);
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      @include btf.title-font-4;
+      max-width: 15ch;
+      margin-bottom: 10px;
+
+      @include bm.responsive {
+        @include btf.title-font-5;
+      }
+    }
+
+    p {
+      @include btf.text-font-1;
+      max-width: 35ch;
+    }
   }
 }
