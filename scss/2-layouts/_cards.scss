@@ -1,0 +1,23 @@
+@use "layout-mixins" as lm;
+@use "../1-base/base-mixin" as bm;
+@use "../1-base/text-font" as btf;
+@use "../3-modules/square-animations" as msa;
+@use "../3-modules/square-creations" as msc;
+
+.cards {
+  max-width: 1900px;
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+  img[src$="jpeg"] {
+    width: 20vw;
+    height: 30vw;
+    transform: skewY(2deg);
+  }
+
+  p{
+    max-width: 35ch;
+  }
+}
