@@ -2,9 +2,16 @@
   margin-top: 45px;
   margin-bottom: 70px;
 }
+@media (max-width: 800px) {
+  .header {
+    margin-bottom: 40px;
+  }
+}
 .header .header-nav h1 {
+  font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.25rem;
+  color: #D1D1D1;
   font-weight: 700;
   max-height: max-content;
 }
@@ -77,6 +84,11 @@
 @media (max-width: 800px) {
   .main {
     padding: 0 20px;
+  }
+}
+@media (max-width: 800px) {
+  .main {
+    margin-bottom: 100px;
   }
 }
 .main-picture {
@@ -174,6 +186,11 @@
     padding: 0 20px;
   }
 }
+@media (max-width: 800px) {
+  .studio {
+    margin-bottom: 100px;
+  }
+}
 @media (max-width: 1200px) {
   .studio {
     gap: 50px;
@@ -262,6 +279,7 @@
 @media (max-width: 800px) {
   .activities {
     padding: 0 20px;
+    margin-bottom: 100px;
   }
 }
 .activities-title {
@@ -512,6 +530,7 @@
 @media (max-width: 800px) {
   .video {
     padding: 0 20px;
+    margin-bottom: 100px;
   }
 }
 .video-img-container {

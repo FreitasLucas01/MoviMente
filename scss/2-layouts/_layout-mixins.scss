@@ -1,6 +1,6 @@
 @use "../1-base/base-mixin" as bm;
 
-@mixin center-content-sections{
+@mixin center-content-sections {
   max-width: 1900px;
   padding: 0 32px;
   margin-inline: auto;
@@ -8,42 +8,47 @@
 
   @include bm.responsive {
     padding: 0 20px;
+    margin-bottom: 100px;
   }
 }
 
-@mixin flex-content-sections{
+@mixin flex-content-sections {
   max-width: 1900px;
   display: flex;
   gap: 50px;
+
+  @include bm.responsive {
+    margin-bottom: 100px;
+  }
 }
 
-@mixin center-content-menu{
-    max-width: 1850px;
-    padding: 0 32px;
-    margin-inline: auto;
+@mixin center-content-menu {
+  max-width: 1850px;
+  padding: 0 32px;
+  margin-inline: auto;
 
-    @include bm.responsive {
-      padding: 0 20px;
-    }
+  @include bm.responsive {
+    padding: 0 20px;
+  }
 }
 
-@mixin flex-menu{
+@mixin flex-menu {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
 @mixin menu-animation {
-    position: static;
-    width: 100%;
-    margin-top: 30px;
-    height: 0;
-    transition: 0.4s;
-    visibility: hidden;
-    overflow-y: hidden; 
+  position: static;
+  width: 100%;
+  margin-top: 30px;
+  height: 0;
+  transition: 0.4s;
+  visibility: hidden;
+  overflow-y: hidden;
 
-    &.ativo {
-      height: 35vh;
-      visibility: visible;
-    }
+  &.ativo {
+    height: 35vh;
+    visibility: visible;
+  }
 }

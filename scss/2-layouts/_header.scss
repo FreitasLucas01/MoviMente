@@ -1,14 +1,18 @@
-@use "../1-base/base-mixin" as bm;
 @use "layout-mixins" as lm;
+@use "../1-base/base-mixin" as bm;
+@use "../1-base/text-font" as btf;
 
 .header {
   margin-top: 45px;
   margin-bottom: 70px;
 
+  @include bm.responsive {
+    margin-bottom: 40px;
+  }
+
   .header-nav {
     h1 {
-      font-size: 1.25rem;
-      line-height: 1.25rem;
+      @include btf.text-font-2;
       font-weight: 700;
       max-height: max-content;
     }
