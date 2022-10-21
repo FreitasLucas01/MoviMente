@@ -516,7 +516,7 @@
 @media (max-width: 800px) {
   .activities-info-pink {
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     border: none;
   }
 }
