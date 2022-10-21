@@ -11,17 +11,32 @@
   display: flex;
   justify-content: center;
 
-//   @include bm.responsive(1050px) {
-//     flex-wrap: wrap;
-//   }
+  @include bm.responsive(1050px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @include bm.responsive(500px) {
+    grid-template-columns: 1fr;
+  }
 
   &-box {
     width: 100%;
     border-left: 1px dotted bv.$modal-btn-color;
     padding: 0 35px 80px 35px;
 
+    @include bm.responsive(1050px) {
+      border: none;
+      padding: 0;
+    }
+
     &.neon {
       border-right: 1px dotted bv.$modal-btn-color;
+
+      @include bm.responsive(1050px) {
+        border: none;
+      }
     }
 
     .cards-box-moon,
@@ -32,15 +47,31 @@
     }
     &:hover .cards-box-moon {
       transform: translateY(-3rem);
+      @include bm.responsive(1050px) {
+        transform: translateY(0rem);
+        transform: scale(1.01);
+      }
     }
     &:hover .cards-box-mask {
       transform: translateY(-3rem);
+      @include bm.responsive(1050px) {
+        transform: translateY(0rem);
+        transform: scale(1.01);
+      }
     }
     &:hover .cards-box-sparkle {
       transform: translateY(-3rem);
+      @include bm.responsive(1050px) {
+        transform: translateY(0rem);
+        transform: scale(1.01);
+      }
     }
     &:hover .cards-box-neon {
       transform: translateY(-3rem);
+      @include bm.responsive(1050px) {
+        transform: translateY(0rem);
+        transform: scale(1.01);
+      }
     }
 
     img[src$="jpeg"] {

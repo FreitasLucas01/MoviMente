@@ -690,13 +690,36 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 1050px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
 .cards-box {
   width: 100%;
   border-left: 1px dotted rgba(255, 255, 255, 0.5);
   padding: 0 35px 80px 35px;
 }
+@media (max-width: 1050px) {
+  .cards-box {
+    border: none;
+    padding: 0;
+  }
+}
 .cards-box.neon {
   border-right: 1px dotted rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 1050px) {
+  .cards-box.neon {
+    border: none;
+  }
 }
 .cards-box .cards-box-moon,
 .cards-box .cards-box-mask,
@@ -707,14 +730,38 @@
 .cards-box:hover .cards-box-moon {
   transform: translateY(-3rem);
 }
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-moon {
+    transform: translateY(0rem);
+    transform: scale(1.01);
+  }
+}
 .cards-box:hover .cards-box-mask {
   transform: translateY(-3rem);
+}
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-mask {
+    transform: translateY(0rem);
+    transform: scale(1.01);
+  }
 }
 .cards-box:hover .cards-box-sparkle {
   transform: translateY(-3rem);
 }
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-sparkle {
+    transform: translateY(0rem);
+    transform: scale(1.01);
+  }
+}
 .cards-box:hover .cards-box-neon {
   transform: translateY(-3rem);
+}
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-neon {
+    transform: translateY(0rem);
+    transform: scale(1.01);
+  }
 }
 .cards-box img[src$=jpeg] {
   width: 100%;
