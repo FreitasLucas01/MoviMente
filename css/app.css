@@ -733,7 +733,7 @@
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-moon {
     transform: translateY(0rem);
-    transform: scale(1.01);
+    transform: scale(1.02);
   }
 }
 .cards-box:hover .cards-box-mask {
@@ -742,7 +742,7 @@
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-mask {
     transform: translateY(0rem);
-    transform: scale(1.01);
+    transform: scale(1.02);
   }
 }
 .cards-box:hover .cards-box-sparkle {
@@ -751,7 +751,7 @@
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-sparkle {
     transform: translateY(0rem);
-    transform: scale(1.01);
+    transform: scale(1.02);
   }
 }
 .cards-box:hover .cards-box-neon {
@@ -760,7 +760,7 @@
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-neon {
     transform: translateY(0rem);
-    transform: scale(1.01);
+    transform: scale(1.02);
   }
 }
 .cards-box img[src$=jpeg] {
