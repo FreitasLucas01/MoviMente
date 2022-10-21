@@ -721,9 +721,207 @@
     border: none;
   }
 }
-.cards-box .cards-box-moon,
-.cards-box .cards-box-mask,
-.cards-box .cards-box-sparkle,
+.cards-box .cards-box-moon {
+  transition: 0.5s;
+}
+.cards-box:hover .cards-box-moon {
+  transform: translateY(-3rem);
+}
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-moon {
+    transform: translateY(0rem);
+    transform: scale(1.02);
+  }
+}
+.cards-box:hover .cards-box-mask {
+  transform: translateY(-3rem);
+}
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-mask {
+    transform: translateY(0rem);
+    transform: scale(1.02);
+  }
+}
+.cards-box:hover .cards-box-sparkle {
+  transform: translateY(-3rem);
+}
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-sparkle {
+    transform: translateY(0rem);
+    transform: scale(1.02);
+  }
+}
+.cards-box:hover .cards-box-neon {
+  transform: translateY(-3rem);
+}
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-neon {
+    transform: translateY(0rem);
+    transform: scale(1.02);
+  }
+}
+.cards-box img[src$=jpeg] {
+  width: 100%;
+  height: 75%;
+  transform: skewY(2deg);
+  margin-bottom: 40px;
+}
+.cards-box h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #C4E5F6;
+  max-width: 15ch;
+  margin-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .cards-box h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #C4E5F6;
+  }
+}
+.cards-box p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  max-width: 35ch;
+}
+.cards-box .cards-box-mask {
+  transition: 0.5s;
+}
+.cards-box:hover .cards-box-moon {
+  transform: translateY(-3rem);
+}
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-moon {
+    transform: translateY(0rem);
+    transform: scale(1.02);
+  }
+}
+.cards-box:hover .cards-box-mask {
+  transform: translateY(-3rem);
+}
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-mask {
+    transform: translateY(0rem);
+    transform: scale(1.02);
+  }
+}
+.cards-box:hover .cards-box-sparkle {
+  transform: translateY(-3rem);
+}
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-sparkle {
+    transform: translateY(0rem);
+    transform: scale(1.02);
+  }
+}
+.cards-box:hover .cards-box-neon {
+  transform: translateY(-3rem);
+}
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-neon {
+    transform: translateY(0rem);
+    transform: scale(1.02);
+  }
+}
+.cards-box img[src$=jpeg] {
+  width: 100%;
+  height: 75%;
+  transform: skewY(2deg);
+  margin-bottom: 40px;
+}
+.cards-box h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #C4E5F6;
+  max-width: 15ch;
+  margin-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .cards-box h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #C4E5F6;
+  }
+}
+.cards-box p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  max-width: 35ch;
+}
+.cards-box .cards-box-sparkle {
+  transition: 0.5s;
+}
+.cards-box:hover .cards-box-moon {
+  transform: translateY(-3rem);
+}
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-moon {
+    transform: translateY(0rem);
+    transform: scale(1.02);
+  }
+}
+.cards-box:hover .cards-box-mask {
+  transform: translateY(-3rem);
+}
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-mask {
+    transform: translateY(0rem);
+    transform: scale(1.02);
+  }
+}
+.cards-box:hover .cards-box-sparkle {
+  transform: translateY(-3rem);
+}
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-sparkle {
+    transform: translateY(0rem);
+    transform: scale(1.02);
+  }
+}
+.cards-box:hover .cards-box-neon {
+  transform: translateY(-3rem);
+}
+@media (max-width: 1050px) {
+  .cards-box:hover .cards-box-neon {
+    transform: translateY(0rem);
+    transform: scale(1.02);
+  }
+}
+.cards-box img[src$=jpeg] {
+  width: 100%;
+  height: 75%;
+  transform: skewY(2deg);
+  margin-bottom: 40px;
+}
+.cards-box h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #C4E5F6;
+  max-width: 15ch;
+  margin-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .cards-box h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #C4E5F6;
+  }
+}
+.cards-box p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  max-width: 35ch;
+}
 .cards-box .cards-box-neon {
   transition: 0.5s;
 }
