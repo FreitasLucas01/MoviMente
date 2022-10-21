@@ -28,6 +28,7 @@
 
       @include bm.responsive {
         @include btf.title-font-4;
+        color: bv.$text-color;
         margin-bottom: 70px;
       }
 
