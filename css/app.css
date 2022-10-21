@@ -133,8 +133,8 @@
   }
 }
 .main-text h2 {
-  font-size: 3.7rem;
   font-weight: 400;
+  font-size: 3.7rem;
   line-height: 3.7rem;
   color: #C4E5F6;
   margin-bottom: 32px;
@@ -149,9 +149,9 @@
   }
 }
 .main-text p {
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 400;
   max-width: 45ch;
   margin-bottom: 32px;
 }
@@ -161,9 +161,9 @@
   }
 }
 .main-text a {
+  font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.875rem;
-  font-weight: 400;
 }
 .main-text a::before {
   top: 15px;
@@ -226,8 +226,8 @@
   transform: scale(1.15);
 }
 .studio-text h2 {
-  font-size: 3.7rem;
   font-weight: 400;
+  font-size: 3.7rem;
   line-height: 3.7rem;
   color: #C4E5F6;
   margin-bottom: 32px;
@@ -295,21 +295,21 @@
   display: block;
   text-transform: uppercase;
   margin-bottom: 15px;
+  font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.875rem;
-  font-weight: 400;
   line-height: 1.25rem;
 }
 .activities-title h2 {
-  font-size: 5.25rem;
   font-weight: 400;
+  font-size: 5.25rem;
   line-height: 5.25rem;
   color: #C4E5F6;
 }
 @media (max-width: 800px) {
   .activities-title h2 {
-    font-size: 3.7rem;
     font-weight: 400;
+    font-size: 3.7rem;
     line-height: 3.7rem;
     color: #C4E5F6;
     margin-bottom: 32px;
@@ -326,24 +326,24 @@
   }
 }
 .activities-info h3 {
-  font-size: 2.5rem;
   font-weight: 400;
+  font-size: 2.5rem;
   line-height: 2.5rem;
   color: #C4E5F6;
   margin-bottom: 23px;
 }
 @media (max-width: 800px) {
   .activities-info h3 {
-    font-size: 2rem;
     font-weight: 400;
+    font-size: 2rem;
     line-height: 2rem;
     color: #C4E5F6;
   }
 }
 .activities-info p {
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 400;
   max-width: 47.6ch;
 }
 @media (max-width: 800px) {
@@ -611,9 +611,9 @@
 @media (max-width: 800px) {
   .video-img-container h3 {
     max-width: 5ch;
+    font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
-    font-weight: 400;
   }
 }
 .video-img-container:hover ::before {
@@ -689,12 +689,18 @@
   padding: 0 32px;
   display: flex;
   justify-content: center;
+  margin-bottom: 160px;
 }
 @media (max-width: 1050px) {
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .cards {
+    margin-bottom: 100px;
   }
 }
 @media (max-width: 500px) {
@@ -725,7 +731,7 @@
   transition: 0.5s;
 }
 .cards-box:hover .cards-box-moon {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-moon {
@@ -734,7 +740,7 @@
   }
 }
 .cards-box:hover .cards-box-mask {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-mask {
@@ -743,7 +749,7 @@
   }
 }
 .cards-box:hover .cards-box-sparkle {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-sparkle {
@@ -752,7 +758,7 @@
   }
 }
 .cards-box:hover .cards-box-neon {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-neon {
@@ -767,8 +773,8 @@
   margin-bottom: 40px;
 }
 .cards-box h3 {
-  font-size: 2.5rem;
   font-weight: 400;
+  font-size: 2.5rem;
   line-height: 2.5rem;
   color: #C4E5F6;
   max-width: 15ch;
@@ -776,23 +782,23 @@
 }
 @media (max-width: 800px) {
   .cards-box h3 {
-    font-size: 2rem;
     font-weight: 400;
+    font-size: 2rem;
     line-height: 2rem;
     color: #C4E5F6;
   }
 }
 .cards-box p {
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 400;
   max-width: 35ch;
 }
 .cards-box .cards-box-mask {
   transition: 0.5s;
 }
 .cards-box:hover .cards-box-moon {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-moon {
@@ -801,7 +807,7 @@
   }
 }
 .cards-box:hover .cards-box-mask {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-mask {
@@ -810,7 +816,7 @@
   }
 }
 .cards-box:hover .cards-box-sparkle {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-sparkle {
@@ -819,7 +825,7 @@
   }
 }
 .cards-box:hover .cards-box-neon {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-neon {
@@ -834,8 +840,8 @@
   margin-bottom: 40px;
 }
 .cards-box h3 {
-  font-size: 2.5rem;
   font-weight: 400;
+  font-size: 2.5rem;
   line-height: 2.5rem;
   color: #C4E5F6;
   max-width: 15ch;
@@ -843,23 +849,23 @@
 }
 @media (max-width: 800px) {
   .cards-box h3 {
-    font-size: 2rem;
     font-weight: 400;
+    font-size: 2rem;
     line-height: 2rem;
     color: #C4E5F6;
   }
 }
 .cards-box p {
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 400;
   max-width: 35ch;
 }
 .cards-box .cards-box-sparkle {
   transition: 0.5s;
 }
 .cards-box:hover .cards-box-moon {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-moon {
@@ -868,7 +874,7 @@
   }
 }
 .cards-box:hover .cards-box-mask {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-mask {
@@ -877,7 +883,7 @@
   }
 }
 .cards-box:hover .cards-box-sparkle {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-sparkle {
@@ -886,7 +892,7 @@
   }
 }
 .cards-box:hover .cards-box-neon {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-neon {
@@ -901,8 +907,8 @@
   margin-bottom: 40px;
 }
 .cards-box h3 {
-  font-size: 2.5rem;
   font-weight: 400;
+  font-size: 2.5rem;
   line-height: 2.5rem;
   color: #C4E5F6;
   max-width: 15ch;
@@ -910,23 +916,23 @@
 }
 @media (max-width: 800px) {
   .cards-box h3 {
-    font-size: 2rem;
     font-weight: 400;
+    font-size: 2rem;
     line-height: 2rem;
     color: #C4E5F6;
   }
 }
 .cards-box p {
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 400;
   max-width: 35ch;
 }
 .cards-box .cards-box-neon {
   transition: 0.5s;
 }
 .cards-box:hover .cards-box-moon {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-moon {
@@ -935,7 +941,7 @@
   }
 }
 .cards-box:hover .cards-box-mask {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-mask {
@@ -944,7 +950,7 @@
   }
 }
 .cards-box:hover .cards-box-sparkle {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-sparkle {
@@ -953,7 +959,7 @@
   }
 }
 .cards-box:hover .cards-box-neon {
-  transform: translateY(-3rem);
+  transform: translateY(-3rem) scale(1.02);
 }
 @media (max-width: 1050px) {
   .cards-box:hover .cards-box-neon {
@@ -968,8 +974,8 @@
   margin-bottom: 40px;
 }
 .cards-box h3 {
-  font-size: 2.5rem;
   font-weight: 400;
+  font-size: 2.5rem;
   line-height: 2.5rem;
   color: #C4E5F6;
   max-width: 15ch;
@@ -977,17 +983,105 @@
 }
 @media (max-width: 800px) {
   .cards-box h3 {
-    font-size: 2rem;
     font-weight: 400;
+    font-size: 2rem;
     line-height: 2rem;
     color: #C4E5F6;
   }
 }
 .cards-box p {
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 400;
   max-width: 35ch;
+}
+
+.blockquote {
+  max-width: 1850px;
+  padding: 0 32px;
+  margin-inline: auto;
+}
+@media (max-width: 800px) {
+  .blockquote {
+    padding: 0 20px;
+  }
+}
+.blockquote-container {
+  width: 80%;
+  margin-inline: auto;
+}
+@media (max-width: 800px) {
+  .blockquote-container {
+    width: 100%;
+  }
+}
+.blockquote-container-title {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  color: #D1D1D1;
+  line-height: 1.56rem;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.blockquote-container-text {
+  font-weight: 400;
+  font-size: 3.69rem;
+  line-height: 4.25rem;
+  color: #D1D1D1;
+  position: relative;
+  margin-bottom: 100px;
+}
+@media (max-width: 800px) {
+  .blockquote-container-text {
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: #C4E5F6;
+    margin-bottom: 70px;
+  }
+}
+.blockquote-container-text::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #1C427E;
+  z-index: -1;
+}
+@media (max-width: 800px) {
+  .blockquote-container-text::after {
+    top: 50%;
+  }
+}
+.blockquote-container-ceo {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: #C4E5F6;
+  text-align: end;
+  margin-bottom: 15px;
+}
+@media (max-width: 800px) {
+  .blockquote-container-ceo {
+    text-align: left;
+  }
+}
+.blockquote-container-subtitle {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: end;
+}
+@media (max-width: 800px) {
+  .blockquote-container-subtitle {
+    text-align: left;
+  }
 }
 
 .links {

@@ -35,7 +35,7 @@ $cards: moon, mask, sparkle, neon;
 
       @each $itens in $cards {
         &:hover .cards-box-#{$itens} {
-          transform: translateY(-3rem);
+          transform: translateY(-3rem) scale(1.02);
           @include bm.responsive(1050px) {
             transform: translateY(0rem);
             transform: scale(1.02);

@@ -1,15 +1,20 @@
 @use "../1-base/base-mixin" as bm;
 
-@mixin center-card-section{
+@mixin center-card-section {
   max-width: 1900px;
   padding: 0 32px;
   display: flex;
   justify-content: center;
+  margin-bottom: 160px;
 
   @include bm.responsive(1050px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+  }
+
+  @include bm.responsive {
+    margin-bottom: 100px;
   }
 
   @include bm.responsive(500px) {

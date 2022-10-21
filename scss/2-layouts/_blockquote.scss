@@ -1,0 +1,72 @@
+@use "layout-mixins" as lm;
+@use "../1-base/variables" as bv;
+@use "../1-base/text-font" as btf;
+@use "../1-base/base-mixin" as bm;
+
+.blockquote {
+  @include lm.center-content-menu;
+
+  &-container {
+    width: 80%;
+    margin-inline: auto;
+
+    @include bm.responsive {
+      width: 100%;
+    }
+
+    &-title {
+      @include btf.text-font-2;
+      line-height: 1.56rem;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    &-text {
+      @include btf.text-font-3;
+      position: relative;
+      margin-bottom: 100px;
+
+      @include bm.responsive {
+        @include btf.title-font-4;
+        margin-bottom: 70px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: bv.$square-blue-color;
+        z-index: -1;
+
+        @include bm.responsive {
+          top: 50%;
+        }
+      }
+    }
+
+    &-ceo {
+      @include btf.title-font-4;
+      text-align: end;
+      margin-bottom: 15px;
+
+      @include bm.responsive {
+        text-align: left;
+      }
+    }
+
+    &-subtitle {
+      @include btf.text-font-1;
+      text-align: end;
+
+      @include bm.responsive {
+        text-align: left;
+      }
+    }
+  }
+}
