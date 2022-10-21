@@ -8,24 +8,7 @@
 $cards: moon, mask, sparkle, neon;
 
 .cards {
-  max-width: 1900px;
-  padding: 0 32px;
-  display: flex;
-  justify-content: center;
-
-  @include bm.responsive(1050px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-  }
-
-  @include bm.responsive {
-    padding: 0 20px;
-  }
-
-  @include bm.responsive(500px) {
-    grid-template-columns: 1fr;
-  }
+  @include lm.center-card-section;
 
   &-box {
     width: 100%;
