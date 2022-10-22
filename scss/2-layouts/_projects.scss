@@ -1,0 +1,98 @@
+@use "layout-mixins" as lm;
+@use "../1-base/variables" as bv;
+@use "../1-base/text-font" as btf;
+@use "../1-base/base-mixin" as bm;
+@use "../3-modules/square-animations" as msa;
+@use "../3-modules/square-creations" as msc;
+
+.projects {
+  @include lm.center-content-sections;
+  text-align: left;
+
+  p {
+    @include btf.text-font-4;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    @include btf.title-font-3;
+    margin-bottom: 90px;
+
+    @include bm.responsive {
+      @include btf.title-font-2;
+      margin-bottom: 90px;
+    }
+  }
+
+  &-container {
+    display: flex;
+    gap: 64px;
+
+    @include bm.responsive(1090px) {
+      display: block;
+    }
+
+    &-cards {
+      @include bm.responsive {
+        margin-bottom: 50px;
+      }
+
+      &-flex {
+        display: flex;
+        gap: 64px;
+        margin: 104px 0 137px 0;
+
+        @include bm.responsive {
+          flex-direction: column;
+          gap: 50px;
+          margin: 50px 0;
+        }
+
+        &-illustration,
+        &-animation {
+          width: 30vw;
+
+          @include bm.responsive(1090px) {
+            width: 50vw;
+          }
+
+          @include bm.responsive {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &-text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5px;
+
+      p {
+        color: bv.$title-color;
+        text-transform: capitalize;
+      }
+
+      span {
+        @include btf.text-font-1;
+        text-transform: uppercase;
+      }
+    }
+
+    &-right {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 137px;
+
+      @include bm.responsive(1090px) {
+        width: 100%;
+        height: 100%;
+        gap: 50px;
+      }
+    }
+  }
+}

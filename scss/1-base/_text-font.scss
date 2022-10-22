@@ -49,8 +49,15 @@
 }
 
 @mixin text-font-3 {
-    font-weight: 400;
-    font-size: 3.69rem;
-    line-height: 4.25rem;
-    color: bv.$text-color;
-  }
+  font-weight: 400;
+  font-size: 3.69rem;
+  line-height: 4.25rem;
+  color: bv.$text-color;
+}
+
+@mixin text-font-4 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.56rem;
+  color: bv.$text-color;
+}

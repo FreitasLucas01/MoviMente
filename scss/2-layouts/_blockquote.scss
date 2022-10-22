@@ -15,8 +15,7 @@
     }
 
     &-title {
-      @include btf.text-font-2;
-      line-height: 1.56rem;
+      @include btf.text-font-4;
       text-transform: uppercase;
       margin-bottom: 24px;
     }
@@ -24,7 +23,7 @@
     &-text {
       @include btf.text-font-3;
       position: relative;
-      margin-bottom: 100px;
+      margin-bottom: 30px;
 
       @include bm.responsive {
         @include btf.title-font-4;
