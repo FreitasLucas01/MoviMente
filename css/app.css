@@ -1000,10 +1000,16 @@
   max-width: 1850px;
   padding: 0 32px;
   margin-inline: auto;
+  margin-bottom: 160px;
 }
 @media (max-width: 800px) {
   .blockquote {
     padding: 0 20px;
+  }
+}
+@media (max-width: 800px) {
+  .blockquote {
+    margin-bottom: 100px;
   }
 }
 .blockquote-container {
@@ -1034,8 +1040,8 @@
 @media (max-width: 800px) {
   .blockquote-container-text {
     font-weight: 400;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 2rem;
     color: #C4E5F6;
     color: #D1D1D1;
     margin-bottom: 70px;

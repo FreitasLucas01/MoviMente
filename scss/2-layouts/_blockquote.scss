@@ -5,6 +5,11 @@
 
 .blockquote {
   @include lm.center-content-menu;
+  margin-bottom: 160px;
+
+  @include bm.responsive {
+    margin-bottom: 100px;
+  }
 
   &-container {
     width: 80%;
@@ -26,7 +31,7 @@
       margin-bottom: 30px;
 
       @include bm.responsive {
-        @include btf.title-font-4;
+        @include btf.title-font-5;
         color: bv.$text-color;
         margin-bottom: 70px;
       }
