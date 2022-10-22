@@ -33,7 +33,7 @@
       @include bm.responsive {
         @include btf.title-font-5;
         color: bv.$text-color;
-        margin-bottom: 70px;
+        margin-bottom: 30px;
       }
 
       &::after {
