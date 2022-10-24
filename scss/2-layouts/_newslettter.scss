@@ -1,0 +1,39 @@
+@use "layout-mixins" as lm;
+@use "../1-base/variables" as bv;
+@use "../1-base/text-font" as btf;
+@use "../1-base/base-mixin" as bm;
+
+.newsletter {
+  &-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+
+    &-img {
+      max-width: 115px;
+      width: 10%;
+      height: 10%;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    &-text {
+      h2 {
+        @include btf.title-font-4;
+      }
+
+      span {
+        @include btf.text-font-1;
+        color: bv.$bright-color;
+      }
+    }
+  }
+}
+
+.newsletter-container-text-info-social-networks-icons {
+  svg path {
+    fill: bv.$title-color;
+  }
+}

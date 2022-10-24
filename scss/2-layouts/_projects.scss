@@ -2,8 +2,6 @@
 @use "../1-base/variables" as bv;
 @use "../1-base/text-font" as btf;
 @use "../1-base/base-mixin" as bm;
-@use "../3-modules/square-animations" as msa;
-@use "../3-modules/square-creations" as msc;
 
 .projects {
   @include lm.center-content-sections;
@@ -34,7 +32,7 @@
     }
 
     &-cards {
-      @include bm.responsive {
+      @include bm.responsive(1090px) {
         margin-bottom: 50px;
       }
 
