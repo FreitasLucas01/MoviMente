@@ -1362,6 +1362,23 @@
   display: inline-block;
   margin-bottom: 15px;
 }
+.newsletter-container-text-form-thank {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 67px;
+  background: #70c770;
+  margin-bottom: 20px;
+  display: none;
+}
+.newsletter-container-text-form-thank.ativo {
+  display: flex;
+}
 .newsletter-container-text-form-inputs {
   width: 100%;
   display: flex;
