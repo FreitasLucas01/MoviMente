@@ -3,7 +3,7 @@
 @use "../1-base/text-font" as btf;
 @use "../1-base/base-mixin" as bm;
 @use "../3-modules/modal" as mm;
-@use "../3-modules/modal-btn" as mmb;
+@use "../3-modules/buttons" as mb;
 @use "../3-modules/text-img-animation" as mtia;
 
 .video {
@@ -68,10 +68,6 @@
 
   &-modal-container {
     @include mm.modal;
-
-    .btn-close {
-      @include mmb.modal-btn;
-    }
 
     &-iframe {
       width: 80vw;
