@@ -2,16 +2,16 @@
 @use "../1-base/variables" as bv;
 @use "../1-base/text-font" as btf;
 @use "../1-base/base-mixin" as bm;
-@use "../3-modules/form" as mf;
+@use "../3-modules/form-newsletter" as mfn;
 
 .newsletter {
   &-container {
     @include lm.newsletter-center;
 
     &-img {
+      max-width: 115px;
       display: flex;
       flex: 0 0 auto;
-      max-width: 115px;
       width: 30%;
       height: 30%;
 
@@ -39,10 +39,15 @@
         margin-bottom: 14px;
 
         p {
-          @include btf.text-font-1;
+          @include btf.text-font-7;
+          max-width: 45ch;
 
           &:first-child {
             margin-bottom: 25px;
+          }
+
+          @include bm.responsive {
+            max-width: 100%;
           }
         }
       }
@@ -81,6 +86,23 @@
               }
             }
           }
+        }
+      }
+
+      &-form-container {
+        @include mfn.form-newsletter;
+
+        p {
+          @include btf.text-font-5;
+        }
+
+        span {
+          display: inline-block;
+          margin-bottom: 15px;
+        }
+
+        &-thank {
+          @include lm.form-thank;
         }
       }
     }

@@ -6,4 +6,4 @@ import initSent from "./modules/form-sent.js"
 initMenuMobile();
 initAccessibility();
 initModal();
-initSent()
+initSent();
