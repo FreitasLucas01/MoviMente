@@ -2,6 +2,7 @@
 @use "../1-base/variables" as bv;
 @use "../1-base/text-font" as btf;
 @use "../1-base/base-mixin" as bm;
+@use "../3-modules/form" as mf;
 
 .newsletter {
   &-container {
@@ -39,7 +40,6 @@
 
         p {
           @include btf.text-font-1;
-          line-height: 1.75rem;
 
           &:first-child {
             margin-bottom: 25px;
@@ -79,74 +79,6 @@
               path {
                 fill: bv.$title-color;
               }
-            }
-          }
-        }
-      }
-
-      &-form {
-        p {
-          @include btf.text-font-5;
-        }
-
-        span {
-          display: inline-block;
-          margin-bottom: 15px;
-        }
-
-        &-thank {
-          @include btf.text-font-6;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          width: 100%;
-          height: 67px;
-          background: #70c770;
-          margin-bottom: 20px;
-          display: none;
-
-          &.ativo {
-            display: flex;
-          }
-        }
-
-        &-inputs {
-          width: 100%;
-          display: flex;
-          align-items: center;
-
-          @include bm.responsive(400px) {
-            flex-direction: column;
-            gap: 15px;
-          }
-
-          input {
-            border: none;
-            height: 48px;
-            outline: none;
-          }
-
-          .input-text {
-            width: 70%;
-            @include btf.text-font-1;
-            color: bv.$placeholder-color;
-            opacity: 0.8;
-            background: bv.$text-color;
-            border-top-left-radius: 100px;
-            border-bottom-left-radius: 100px;
-            padding-left: 25px;
-
-            @include bm.responsive(400px) {
-              width: 100%;
-              border-top-left-radius: 0px;
-              border-bottom-left-radius: 0px;
-            }
-
-            &::placeholder {
-              @include btf.text-font-1;
-              color: bv.$placeholder-color;
-              opacity: 0.8;
             }
           }
         }
