@@ -1,6 +1,7 @@
 @use "layout-mixins" as lm;
 @use "../1-base/base-mixin" as bm;
 @use "../1-base/text-font" as btf;
+@use "../3-modules/menu-animation" as mma;
 
 .header {
   margin-top: 45px;
@@ -38,7 +39,7 @@
 
     &-list-expanded {
       @include lm.flex-menu;
-      @include lm.menu-animation;
+      @include mma.menu-animation;
       padding: 0 20px;
       flex-direction: column;
       gap: 10px;

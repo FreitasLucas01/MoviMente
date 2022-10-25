@@ -5,18 +5,7 @@
 
 .newsletter {
   &-container {
-    max-width: 710px;
-    margin-inline: auto;
-    padding: 0 32px;
-    display: flex;
-    justify-content: center;
-    gap: 70px;
-
-    @include bm.responsive {
-      flex-direction: column;
-      gap: 40px;
-      padding: 0 20px;
-    }
+    @include lm.newsletter-center;
 
     &-img {
       display: flex;
@@ -33,7 +22,7 @@
     &-text {
       h2 {
         @include btf.title-font-4;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
       }
 
       span {
@@ -68,6 +57,7 @@
           @include bm.responsive {
             flex-direction: column;
             align-items: start;
+            gap: 15px;
           }
 
           h3 {

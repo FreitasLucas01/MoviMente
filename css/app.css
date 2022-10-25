@@ -1295,7 +1295,7 @@
   font-size: 2.5rem;
   line-height: 2.5rem;
   color: #C4E5F6;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .newsletter-container-text span {
   font-weight: 400;
@@ -1328,6 +1328,7 @@
   .newsletter-container-text-social-networks-flex {
     flex-direction: column;
     align-items: start;
+    gap: 15px;
   }
 }
 .newsletter-container-text-social-networks-flex h3 {

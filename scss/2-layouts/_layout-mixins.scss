@@ -61,17 +61,17 @@
   gap: 20px;
 }
 
-@mixin menu-animation {
-  position: static;
-  width: 100%;
-  margin-top: 30px;
-  height: 0;
-  transition: 0.4s;
-  visibility: hidden;
-  overflow-y: hidden;
+@mixin newsletter-center {
+  max-width: 710px;
+  margin-inline: auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
 
-  &.ativo {
-    height: 35vh;
-    visibility: visible;
+  @include bm.responsive {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
   }
 }
