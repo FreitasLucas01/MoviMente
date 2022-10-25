@@ -15,6 +15,7 @@ export default function initAccessibility() {
       divThank.innerHTML = "Obrigado por preencher o formulário!"
       divThank.style.backgroundColor = "#70C770"
       divThank.classList.add("ativo")
+      inputText.value = ""
     } else {
       divThank.innerHTML = "Favor inserir um e-mail válido"
       divThank.style.backgroundColor = "#1C427E"
