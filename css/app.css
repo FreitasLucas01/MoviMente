@@ -1687,61 +1687,66 @@
   color: #C4E5F6;
   margin-bottom: 20px;
 }
-.footer-container .fale-comigo {
+.footer-container .contacts-title {
   text-align: end;
 }
 @media (max-width: 1090px) {
-  .footer-container .fale-comigo {
+  .footer-container .contacts-title {
     text-align: start;
   }
+}
+.footer-container li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-container li:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background: #CECECE;
+  margin: 0 8px;
+}
+.footer-container li a {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
 }
 .footer-container-links {
   display: flex;
   flex-wrap: wrap;
 }
-.footer-container-links li {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.footer-container-links li:before {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50px;
-  background: #CECECE;
-  margin: 0 8px;
-}
-.footer-container-links li a {
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
+@media (max-width: 400px) {
+  .footer-container-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .footer-container-contacts {
   display: flex;
   flex-wrap: wrap;
 }
-.footer-container-contacts li {
-  display: flex;
-  align-items: center;
-}
-.footer-container-contacts li:before {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50px;
-  background: #CECECE;
-  margin: 0 8px;
-}
-.footer-container-contacts li a {
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
+@media (max-width: 400px) {
+  .footer-container-contacts {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .footer-container .none-list:before {
   display: none;
+}
+@media (max-width: 400px) {
+  .footer-container .none-list:before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background: #CECECE;
+    margin: 0 8px;
+  }
 }
 
 .links {
