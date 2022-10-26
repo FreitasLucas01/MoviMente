@@ -1815,6 +1815,10 @@
   font-family: "DM Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #121212;
   color: #D1D1D1;
