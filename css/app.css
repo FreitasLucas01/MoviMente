@@ -64,7 +64,7 @@
 }
 @media (max-width: 450px) {
   .header .header-nav-list-expanded.ativo {
-    height: 56vh;
+    height: 55vh;
   }
 }
 .header .header-nav-list-expanded li {
