@@ -3,7 +3,7 @@
 @use "../1-base/text-font" as btf;
 @use "../1-base/base-mixin" as bm;
 
-.projects {
+.showcase {
   @include lm.center-content-sections;
   text-align: left;
 
