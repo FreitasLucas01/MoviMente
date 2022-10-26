@@ -13,3 +13,13 @@
     margin-right: 15px;
   }
 }
+
+@mixin footer-detail {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background: bv.$links-color;
+  margin: 0 8px;
+}

@@ -2,7 +2,7 @@
 @use "../1-base/variables" as bv;
 @use "../1-base/base-mixin" as bm;
 @use "../1-base/text-font" as btf;
-@use "../3-modules/center-position-absolute" as mcpa;
+@use "../3-modules/list-details.scss" as mld;
 
 .footer {
   @include lm.recent-center;
@@ -37,13 +37,7 @@
       flex-wrap: wrap;
 
       &:before {
-        content: "";
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        border-radius: 50px;
-        background: bv.$links-color;
-        margin: 0 8px;
+        @include mld.footer-detail;
       }
 
       a {
@@ -71,18 +65,12 @@
       }
     }
 
-    .none-list {
+    .none-list-detail {
       &:before {
         display: none;
 
         @include bm.responsive(400px) {
-          content: "";
-          display: inline-block;
-          width: 8px;
-          height: 8px;
-          border-radius: 50px;
-          background: bv.$links-color;
-          margin: 0 8px;
+          @include mld.footer-detail;
         }
       }
     }

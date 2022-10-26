@@ -1734,11 +1734,11 @@
     gap: 10px;
   }
 }
-.footer-container .none-list:before {
+.footer-container .none-list-detail:before {
   display: none;
 }
 @media (max-width: 400px) {
-  .footer-container .none-list:before {
+  .footer-container .none-list-detail:before {
     content: "";
     display: inline-block;
     width: 8px;
