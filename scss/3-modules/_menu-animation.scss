@@ -14,7 +14,7 @@
     visibility: visible;
 
     @include bm.responsive(450px) {
-      height: 58vh;
+      height: 56vh;
     }
   }
 }
