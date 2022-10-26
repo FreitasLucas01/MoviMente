@@ -2,20 +2,13 @@
 @use "../1-base/variables" as bv;
 @use "../1-base/base-mixin" as bm;
 @use "../1-base/text-font" as btf;
-@use "../3-modules/img-animation" as mia;
-@use "../3-modules/keyframes-mixins" as mk;
 @use "../3-modules/center-position-absolute" as mcpa;
 
 $gallery: galaxy, simple, motion, neon;
 
 .recent {
-  max-width: 1370px;
-  margin-inline: auto;
-  padding: 0 32px;
-
-  @include bm.responsive {
-    padding: 0 20px;
-  }
+  @include lm.recent-center;
+  margin-bottom: 250px;
 
   &-text {
     display: flex;

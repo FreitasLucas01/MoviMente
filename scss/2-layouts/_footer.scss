@@ -1,0 +1,89 @@
+@use "layout-mixins" as lm;
+@use "../1-base/variables" as bv;
+@use "../1-base/base-mixin" as bm;
+@use "../1-base/text-font" as btf;
+@use "../3-modules/center-position-absolute" as mcpa;
+
+.footer {
+  @include lm.recent-center;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+
+    @include bm.responsive(1090px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    h3 {
+      @include btf.text-font-1;
+      text-transform: uppercase;
+      color: bv.$title-color;
+      margin-bottom: 20px;
+    }
+
+    .fale-comigo {
+      text-align: end;
+
+      @include bm.responsive(1090px) {
+        text-align: start;
+      }
+    }
+
+    &-links {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 50px;
+          background: bv.$links-color;
+          margin: 0 8px;
+        }
+
+        a {
+          @include btf.title-font-1;
+        }
+      }
+    }
+
+    &-contacts {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        display: flex;
+        align-items: center;
+
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 50px;
+          background: bv.$links-color;
+          margin: 0 8px;
+        }
+
+        a {
+          @include btf.title-font-1;
+        }
+      }
+    }
+
+    .none-list {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

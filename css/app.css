@@ -1458,9 +1458,12 @@
   max-width: 1370px;
   margin-inline: auto;
   padding: 0 32px;
+  margin-bottom: 160px;
+  margin-bottom: 250px;
 }
 @media (max-width: 800px) {
   .recent {
+    margin-bottom: 100px;
     padding: 0 20px;
   }
 }
@@ -1654,6 +1657,93 @@
   }
 }
 
+.footer {
+  max-width: 1370px;
+  margin-inline: auto;
+  padding: 0 32px;
+  margin-bottom: 160px;
+}
+@media (max-width: 800px) {
+  .footer {
+    margin-bottom: 100px;
+    padding: 0 20px;
+  }
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1090px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.footer-container h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  color: #C4E5F6;
+  margin-bottom: 20px;
+}
+.footer-container .fale-comigo {
+  text-align: end;
+}
+@media (max-width: 1090px) {
+  .footer-container .fale-comigo {
+    text-align: start;
+  }
+}
+.footer-container-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-container-links li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-container-links li:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background: #CECECE;
+  margin: 0 8px;
+}
+.footer-container-links li a {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+.footer-container-contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-container-contacts li {
+  display: flex;
+  align-items: center;
+}
+.footer-container-contacts li:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background: #CECECE;
+  margin: 0 8px;
+}
+.footer-container-contacts li a {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+.footer-container .none-list:before {
+  display: none;
+}
+
 .links {
   color: #CECECE;
   font-size: 1.25rem;
@@ -1723,7 +1813,6 @@
 body {
   background: #121212;
   color: #D1D1D1;
-  margin-bottom: 200px;
 }
 
 img {
