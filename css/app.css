@@ -62,7 +62,7 @@
   height: 41vh;
   visibility: visible;
 }
-@media (max-width: 800px) {
+@media (max-width: 450px) {
   .header .header-nav-list-expanded.ativo {
     height: 58vh;
   }
