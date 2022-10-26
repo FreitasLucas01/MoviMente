@@ -59,7 +59,7 @@
   gap: 10px;
 }
 .header .header-nav-list-expanded.ativo {
-  height: 41vh;
+  height: 55vh;
   visibility: visible;
 }
 .header .header-nav-list-expanded li {
