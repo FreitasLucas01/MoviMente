@@ -1,18 +1,19 @@
-// export default function initScrollSuave() {
-//   const navItens = document.querySelectorAll("[data-scroll='smooth']")
+export default function initScrollSuave() {
+  const links = document.querySelectorAll("[data-scroll='smooth']");
 
-//   navItens.forEach((itens) => {
-//     itens.addEventListener("click", (e) => {
-//       e.preventDefault()
-//       const href = e.currentTarget.getAttribute("href")
-//       const sections = document.querySelector(href)
-//       console.log(sections)
+  function handleClick(e) {
+    e.preventDefault()
+    const href = this.getAttribute("href")
+    const sections = document.querySelector(href)
+    const topSection = sections.offsetTop - 420
 
-//       sections.scrollIntoView({
-//         behavior: "smooth",
-//         block: "nearest",
-//         inline: "nearest"
-//       })
-//     })
-//   })
-// }
+    window.scrollTo({
+      top: topSection,
+      behavior: "smooth"
+    })
+  }
+
+  links.forEach((itens) => {
+    itens.addEventListener("click", handleClick)
+  })
+}
