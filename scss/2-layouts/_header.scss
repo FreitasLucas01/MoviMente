@@ -51,6 +51,12 @@
           width: 100%;
           margin-inline: auto;
         }
+
+        a {
+          @include bm.responsive {
+            max-width: 100%;
+          }
+        }
       }
     }
   }
