@@ -59,8 +59,13 @@
   gap: 10px;
 }
 .header .header-nav-list-expanded.ativo {
-  height: 50vh;
+  height: 41vh;
   visibility: visible;
+}
+@media (max-width: 800px) {
+  .header .header-nav-list-expanded.ativo {
+    height: 55vh;
+  }
 }
 .header .header-nav-list-expanded li {
   border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
