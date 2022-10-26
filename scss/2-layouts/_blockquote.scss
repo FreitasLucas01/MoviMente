@@ -51,6 +51,8 @@
         z-index: -1;
 
         @include bm.responsive {
+          width: 200px;
+          height: 200px;
           top: 50%;
         }
       }
