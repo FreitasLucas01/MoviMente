@@ -1,26 +1,19 @@
 @use "../1-base/variables" as bv;
 @use "../1-base/base-mixin" as bm;
+@use "../3-modules/center-position-absolute" as mcpa;
 
 @mixin text-img-animation {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  @include mcpa.fifty-position-absolute;
 
   &::before {
+    @include mcpa.fifty-position-absolute;
     content: "";
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 180px;
     height: 180px;
     border-radius: 50%;
     background: bv.$circle-red-color;
     transition: 0.3s;
-    z-index: -1;
 
     @include bm.responsive() {
       width: 90px;

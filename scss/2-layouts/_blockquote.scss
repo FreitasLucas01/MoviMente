@@ -2,6 +2,7 @@
 @use "../1-base/variables" as bv;
 @use "../1-base/text-font" as btf;
 @use "../1-base/base-mixin" as bm;
+@use "../3-modules/center-position-absolute" as mcpa;
 
 .blockquote {
   @include lm.center-content-menu;
@@ -41,10 +42,7 @@
         display: block;
         width: 300px;
         height: 300px;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include mcpa.sixty-position-absolute;
         border-radius: 50%;
         background: bv.$square-blue-color;
         z-index: -1;

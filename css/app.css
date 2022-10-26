@@ -694,18 +694,18 @@
   z-index: 1;
 }
 .video-img-container h3::before {
-  content: "";
-  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
+  content: "";
+  display: block;
   width: 180px;
   height: 180px;
   border-radius: 50%;
   background: #DC493A;
   transition: 0.3s;
-  z-index: -1;
 }
 @media (max-width: 800px) {
   .video-img-container h3::before {
@@ -1122,6 +1122,7 @@
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
   border-radius: 50%;
   background: #1C427E;
   z-index: -1;
@@ -1510,13 +1511,13 @@
   line-height: 3.7rem;
   color: #C4E5F6;
   margin-bottom: 32px;
-  color: #FFFFFF;
-  text-transform: uppercase;
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 @media (max-width: 400px) {
   .recent-gallery-galaxy p {
@@ -1545,13 +1546,13 @@
   line-height: 3.7rem;
   color: #C4E5F6;
   margin-bottom: 32px;
-  color: #FFFFFF;
-  text-transform: uppercase;
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 @media (max-width: 400px) {
   .recent-gallery-simple p {
@@ -1580,13 +1581,13 @@
   line-height: 3.7rem;
   color: #C4E5F6;
   margin-bottom: 32px;
-  color: #FFFFFF;
-  text-transform: uppercase;
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 @media (max-width: 400px) {
   .recent-gallery-motion p {
@@ -1615,13 +1616,13 @@
   line-height: 3.7rem;
   color: #C4E5F6;
   margin-bottom: 32px;
-  color: #FFFFFF;
-  text-transform: uppercase;
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 @media (max-width: 400px) {
   .recent-gallery-neon p {

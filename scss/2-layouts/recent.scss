@@ -2,8 +2,9 @@
 @use "../1-base/variables" as bv;
 @use "../1-base/base-mixin" as bm;
 @use "../1-base/text-font" as btf;
-@use "../3-modules/keyframes-mixins" as mk;
 @use "../3-modules/img-animation" as mia;
+@use "../3-modules/keyframes-mixins" as mk;
+@use "../3-modules/center-position-absolute" as mcpa;
 
 $gallery: galaxy, simple, motion, neon;
 
@@ -73,13 +74,9 @@ $gallery: galaxy, simple, motion, neon;
 
         p {
           @include btf.title-font-2;
+          @include mcpa.sixty-position-absolute;
           color: bv.$light-color;
           text-transform: uppercase;
-          position: absolute;
-          top: 60%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          z-index: 1;
 
           @include bm.responsive(400px) {
             @include btf.title-font-4;
