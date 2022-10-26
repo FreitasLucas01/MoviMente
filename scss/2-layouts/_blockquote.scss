@@ -32,11 +32,13 @@
 
     &-text {
       @include btf.text-font-3;
+      color: bv.$bright-color;
       position: relative;
       margin-bottom: 30px;
 
       @include bm.responsive {
-        @include btf.text-font-9;
+        @include btf.title-font-5;
+        color: bv.$bright-color;
         margin-bottom: 30px;
       }
 
