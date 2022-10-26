@@ -65,9 +65,9 @@
       }
     }
 
-    &-subtitle {
+    &-ceo {
       @include btf.text-font-1;
-      text-align: end;
+      text-align: right;
 
       @include bm.responsive {
         text-align: left;

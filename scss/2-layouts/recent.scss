@@ -1,0 +1,93 @@
+@use "layout-mixins" as lm;
+@use "../1-base/variables" as bv;
+@use "../1-base/base-mixin" as bm;
+@use "../1-base/text-font" as btf;
+@use "../3-modules/keyframes-mixins" as mk;
+@use "../3-modules/img-animation" as mia;
+
+$gallery: galaxy, simple, motion, neon;
+
+.recent {
+  max-width: 1370px;
+  margin-inline: auto;
+  padding: 0 32px;
+
+  @include bm.responsive {
+    padding: 0 20px;
+  }
+
+  &-text {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 100px;
+
+    @include bm.responsive {
+      margin-bottom: 50px;
+    }
+
+    @include bm.responsive {
+      flex-direction: column;
+      align-items: start;
+      gap: 30px;
+    }
+
+    &-title {
+      h2 {
+        @include btf.title-font-2;
+        margin-bottom: 0;
+      }
+
+      p {
+        @include btf.text-font-8;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+    }
+
+    &-info {
+      @include btf.text-font-9;
+      max-width: 50ch;
+    }
+  }
+
+  &-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px 65px;
+
+    @include bm.responsive {
+      grid-template-columns: 1fr;
+    }
+
+    @each $img in $gallery {
+      &-#{$img} {
+        position: relative;
+        cursor: pointer;
+
+        h3 {
+          @include btf.text-font-9;
+          text-transform: uppercase;
+          margin-bottom: 15px;
+        }
+
+        p {
+          @include btf.title-font-2;
+          color: bv.$light-color;
+          text-transform: uppercase;
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+
+          @include bm.responsive(400px) {
+            @include btf.title-font-4;
+            top: 70%;
+            color: bv.$light-color;
+          }
+        }
+      }
+    }
+  }
+}

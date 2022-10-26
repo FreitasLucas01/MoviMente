@@ -80,3 +80,15 @@
   font-size: 1rem;
   line-height: 1.75rem;
 }
+
+@mixin text-font-8 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+@mixin text-font-9 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.56rem;
+}

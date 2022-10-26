@@ -5,6 +5,12 @@
 @use "../3-modules/form-newsletter" as mfn;
 
 .newsletter {
+  margin-bottom: 160px;
+  
+  @include bm.responsive {
+    margin-bottom: 100px;
+  }
+
   &-container {
     @include lm.newsletter-center;
 
@@ -102,7 +108,7 @@
         }
 
         &-thank {
-          @include lm.form-thank;
+          @include mfn.form-thank;
         }
       }
     }
