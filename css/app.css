@@ -1101,6 +1101,13 @@
   text-transform: uppercase;
   margin-bottom: 24px;
 }
+@media (max-width: 800px) {
+  .blockquote-container-title {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
 .blockquote-container-text {
   font-weight: 400;
   font-size: 3.69rem;
@@ -1112,10 +1119,8 @@
 @media (max-width: 800px) {
   .blockquote-container-text {
     font-weight: 400;
-    font-size: 2rem;
-    line-height: 2rem;
-    color: #C4E5F6;
-    color: #D1D1D1;
+    font-size: 1.25rem;
+    line-height: 1.56rem;
     margin-bottom: 30px;
   }
 }
@@ -1148,6 +1153,10 @@
 }
 @media (max-width: 800px) {
   .blockquote-container-name {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #C4E5F6;
     text-align: left;
   }
 }

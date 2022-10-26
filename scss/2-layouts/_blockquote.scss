@@ -24,6 +24,10 @@
       @include btf.text-font-4;
       text-transform: uppercase;
       margin-bottom: 24px;
+
+      @include bm.responsive {
+        @include btf.text-font-8;
+      }
     }
 
     &-text {
@@ -32,8 +36,7 @@
       margin-bottom: 30px;
 
       @include bm.responsive {
-        @include btf.title-font-5;
-        color: bv.$text-color;
+        @include btf.text-font-9;
         margin-bottom: 30px;
       }
 
@@ -59,6 +62,7 @@
       margin-bottom: 15px;
 
       @include bm.responsive {
+        @include btf.title-font-5;
         text-align: left;
       }
     }
