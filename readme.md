@@ -45,7 +45,7 @@
 
 <h2 id="projeto"> 💻 Projeto </h2>
 
-<p>Projeto criado com intuito de treinar ferramentas de desenvolvimento como HTML, SCSS E JavaScript</p>
+<p>Projeto criado com intuito de treinar ferramentas de desenvolvimento como HTML, SCSS e JavaScript</p>
 
 <hr>
 <br>
