@@ -43,11 +43,11 @@
       }
 
       &::after {
+        @include mcpa.sixty-position-absolute;
         content: "";
         display: block;
         width: 300px;
         height: 300px;
-        @include mcpa.sixty-position-absolute;
         border-radius: 50%;
         background: bv.$square-blue-color;
         z-index: -1;
