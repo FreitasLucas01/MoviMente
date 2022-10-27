@@ -29,7 +29,7 @@
 
 - [x] Página totalmente responsiva <br>
 - [x] Menu Hambúrguer</br>
-- [x] Animções<br>
+- [x] Animações<br>
 - [x] Autentificação de Formulário <br>
 - [x] Vídeo<br>
 - [x] Projeto focado em design UX/UI <br>
