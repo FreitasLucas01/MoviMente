@@ -1,5 +1,5 @@
 <br>
-<h1 align="center" style="font-size=5rem">MoviMente</h1> <br>
+<h1 align="center" style="font-size=5rem;">MoviMente</h1> <br>
 
 <h2 align="center"> Portófio </h2>
 
