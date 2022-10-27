@@ -1,6 +1,5 @@
 @use "variables" as v;
 
-@mixin reset {
   * {
     padding: 0;
     margin: 0;
@@ -30,4 +29,3 @@
     max-width: max-content;
     color: currentColor;
   }
-}
