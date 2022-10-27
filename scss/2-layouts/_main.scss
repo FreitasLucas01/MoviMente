@@ -2,18 +2,21 @@
 @use "../1-base/base-mixin" as bm;
 @use "../1-base/text-font" as btf;
 @use "../3-modules/keyframes-mixins" as mk;
-@use "../3-modules/img-animation" as mia;
+@use "../3-modules/img-animation";
 
 .main {
-  @include lm.center-content-menu;
-  @include lm.flex-content-sections;
+  @include lm.center-flex-section;
   margin-bottom: 160px;
+
+  @include bm.responsive {
+    margin-bottom: 100px;
+  }
 
   &-picture {
     overflow: hidden;
 
     img {
-      @include mia.opacity-animation;
+      @extend %opacity-animation;
 
       &:hover {
         @include mk.keyframes(fade) {

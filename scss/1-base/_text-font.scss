@@ -25,7 +25,6 @@
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 2.5rem;
-  color: bv.$title-color;
 }
 
 @mixin title-font-5 {
@@ -91,4 +90,10 @@
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.56rem;
+}
+
+@mixin text-font-10 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }

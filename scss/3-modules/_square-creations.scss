@@ -1,7 +1,7 @@
 @use "../1-base/variables" as bv;
 @use "../1-base/base-mixin" as bm;
 
-@mixin empty-square {
+%empty-square {
   position: absolute;
   width: 78px;
   height: 78px;
@@ -13,7 +13,7 @@
   }
 }
 
-@mixin blue-square {
+%blue-square {
   width: 78px;
   height: 78px;
   background: bv.$square-blue-color;
@@ -26,7 +26,7 @@
   }
 }
 
-@mixin orange-square {
+%orange-square {
   width: 78px;
   height: 78px;
   background: bv.$square-orange-color;
@@ -40,7 +40,7 @@
   }
 }
 
-@mixin pink-square {
+%pink-square {
   width: 70px;
   height: 70px;
   background: bv.$square-pink-color;

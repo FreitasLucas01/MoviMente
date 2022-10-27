@@ -1,6 +1,6 @@
 @use "../1-base/base-mixin" as bm;
 
-@mixin blue-animation {
+%blue-animation {
   position: relative;
   width: 50%;
   margin-inline: auto;
@@ -26,7 +26,7 @@
   }
 }
 
-@mixin orange-animation {
+%orange-animation {
   position: relative;
   width: 50%;
   margin-inline: auto;
@@ -52,7 +52,7 @@
   }
 }
 
-@mixin pink-animation {
+%pink-animation {
   position: relative;
   width: 50%;
   margin-inline: auto;

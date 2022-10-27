@@ -1,6 +1,14 @@
 @use "../1-base/base-mixin" as bm;
 @use "../1-base/text-font" as btf;
 
+@mixin center-flex-section{
+  max-width: 1900px;
+  display: flex;
+  gap: 50px;
+  padding: 0 32px;
+  margin-inline: auto;
+}
+
 @mixin center-card-section {
   max-width: 1900px;
   padding: 0 32px;

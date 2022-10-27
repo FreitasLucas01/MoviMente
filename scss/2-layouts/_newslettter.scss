@@ -3,10 +3,11 @@
 @use "../1-base/text-font" as btf;
 @use "../1-base/base-mixin" as bm;
 @use "../3-modules/form-newsletter" as mfn;
+@use "../3-modules/buttons";
 
 .newsletter {
   margin-bottom: 160px;
-  
+
   @include bm.responsive {
     margin-bottom: 100px;
   }
@@ -109,6 +110,10 @@
 
         &-thank {
           @include mfn.form-thank;
+        }
+
+        .btn-form {
+          @extend %btn-form;
         }
       }
     }

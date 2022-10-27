@@ -1,9 +1,14 @@
 @use "layout-mixins" as lm;
 @use "../1-base/base-mixin" as bm;
 @use "../1-base/text-font" as btf;
-@use "../3-modules/menu-animation" as mma;
+@use "../1-base/variables" as bv;
+@use "../3-modules/menu-animation";
+@use "../3-modules/buttons";
+
+$classes: container, big-line, small-line;
 
 .header {
+  @include lm.center-content-menu;
   margin-top: 45px;
   margin-bottom: 70px;
 
@@ -19,7 +24,6 @@
     }
 
     &-container {
-      @include lm.center-content-menu;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -35,11 +39,21 @@
           }
         }
       }
+
+      .btn-menu {
+        @extend %btn-menu-burger;
+
+        @each $itens in $classes {
+          &-#{$itens} {
+            @extend %#{$itens}-burger;
+          }
+        }
+      }
     }
 
     &-list-expanded {
       @include lm.flex-menu;
-      @include mma.menu-animation;
+      @extend %menu-animation;
       padding: 0 20px;
       flex-direction: column;
       gap: 10px;

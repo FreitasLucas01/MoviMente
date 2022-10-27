@@ -1,6 +1,6 @@
 @use "../1-base/base-mixin" as bm;
 
-@mixin menu-animation {
+%menu-animation {
   position: static;
   width: 100%;
   margin-top: 30px;

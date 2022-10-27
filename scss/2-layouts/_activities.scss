@@ -1,8 +1,11 @@
 @use "layout-mixins" as lm;
-@use "../1-base/base-mixin" as bm;
 @use "../1-base/text-font" as btf;
-@use "../3-modules/square-animations" as msa;
-@use "../3-modules/square-creations" as msc;
+@use "../1-base/base-mixin" as bm;
+@use "../1-base/variables" as bv;
+@use "../3-modules/square-animations";
+@use "../3-modules/square-creations";
+
+$colors: blue, orange, pink;
 
 .activities {
   @include lm.center-content-sections;
@@ -16,12 +19,10 @@
     }
 
     span {
+      @include btf.text-font-2;
       display: block;
       text-transform: uppercase;
       margin-bottom: 15px;
-
-      @include btf.title-font-1;
-      line-height: 1.25rem;
     }
 
     h2 {
@@ -44,6 +45,7 @@
 
     h3 {
       @include btf.title-font-4;
+      color: bv.$title-color;
       margin-bottom: 23px;
 
       @include bm.responsive {
@@ -61,7 +63,7 @@
     }
 
     &-empty-square-first {
-      @include msc.empty-square;
+      @extend %empty-square;
       top: 40px;
       left: 60px;
 
@@ -72,7 +74,7 @@
     }
 
     &-empty-square-second {
-      @include msc.empty-square;
+      @extend %empty-square;
       transform: rotate(45deg);
       top: 165px;
       left: 50px;
@@ -84,7 +86,7 @@
     }
 
     &-empty-square-third {
-      @include msc.empty-square;
+      @extend %empty-square;
       top: 96px;
       left: 30px;
 
@@ -94,28 +96,16 @@
       }
     }
 
-    &-blue-square {
-      @include msc.blue-square;
+    @each $color in $colors {
+      &-#{$color}-square {
+        @extend %#{$color}-square;
+      }
     }
 
-    &-orange-square {
-      @include msc.orange-square;
-    }
-
-    &-pink-square {
-      @include msc.pink-square;
-    }
-
-    &-blue {
-      @include msa.blue-animation;
-    }
-
-    &-orange {
-      @include msa.orange-animation;
-    }
-
-    &-pink {
-      @include msa.pink-animation;
+    @each $color in $colors {
+      &-#{$color} {
+        @extend %#{$color}-animation;
+      }
     }
   }
 }

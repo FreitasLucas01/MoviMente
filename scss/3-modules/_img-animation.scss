@@ -1,4 +1,4 @@
-@mixin opacity-animation {
+%opacity-animation {
   transition: ease 0.7s;
   transform: scale(1);
   animation: opacity-anima 0.7s forwards;

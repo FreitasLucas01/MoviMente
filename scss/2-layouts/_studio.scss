@@ -2,24 +2,19 @@
 @use "../1-base/base-mixin" as bm;
 @use "../1-base/text-font" as btf;
 @use "../3-modules/list-details.scss" as mld;
-@use "../3-modules/img-animation" as mia;
+@use "../3-modules/img-animation";
 
 .studio {
-  @include lm.center-content-menu;
-  @include lm.flex-content-sections;
+  @include lm.center-flex-section;
+  @include btf.title-font-4;
   gap: 100px;
-  font-size: 2.5rem;
-  line-height: 3rem;
   margin-bottom: 160px;
 
-  @include bm.responsive(1200px) {
-    gap: 50px;
-  }
-
   @include bm.responsive {
-    display: block;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    @include btf.text-font-10;
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 100px;
   }
 
   &-picture {
@@ -35,7 +30,7 @@
     }
 
     img {
-      @include mia.opacity-animation;
+      @extend %opacity-animation;
     }
   }
 
