@@ -29,9 +29,9 @@
 
 - [x] Página totalmente responsiva <br>
 - [x] Menu Hambúrguer</br>
-- [x] Simulador de vendas como pessoas física e jurídica <br>
-- [x] Slider carousel <br>
-- [x] Cores correspondentes ao produto<br>
+- [x] Animções<br>
+- [x] Autentificação de Formulário <br>
+- [x] Vídeo<br>
 - [x] Projeto focado em design UX/UI <br>
 - [x] Acessibilidade<br><br>
 
@@ -40,18 +40,12 @@
 <p> Esse projeto foi desenvolvido com as seguintes tecnologias: </p><br>
 
 ✔️HTML<br><br>
-✔️CSS<br><br>
+✔️SCSS<br><br>
 ✔️JavaScript<br><br>
-
-<h2 id="construção"> 🚧 "Nossas taxas para receber" está em construção 🚧</h2>
-
-<h2 align="center"> <img alt="Readme" title="Readme" src=./gif/4.gif> </h2><br><br>
 
 <h2 id="projeto"> 💻 Projeto </h2>
 
-<p>Projeto foi desenvolvido em parceria com uma designer. Resultado final e alterações foram aprovados pela designer que produziu layout.
-
-Projeto no Figma: https://www.figma.com/file/mTayCzjijV8HGGSjkiewER/SafraPay---Redesign-(Behance)?node-id=173%3A1508</p>
+<p>Projeto criado com intuito de treinar ferramentas de desenvolvimento como HTML, SCSS E JavaScript</p>
 
 <hr>
 <br>
